@@ -43,14 +43,19 @@ app.get('/', calendar.authenticate, function(req, res) {
 });
 
 app.get('/calendar/success', calendar.ensureAuthenticated, function(req, res) {
-    res.send('success');
+    res.redirect('/calendar/search');
 });
 
 app.get('/calendar/fail', function(req, res) {
     res.send('fail');
 });
 
-app.get('/calendar/search', calendar.searchCalendar);
+app.get('/calendar/search', calendar.watch);
+
+app.get('/calendar/watch', function(req,res) {
+	res.sent('hello');
+
+});
 
 app.get('/calendar/oauth2callback', calendar.authenticate, function(req, res) {
     console.log(req.isAuthenticated());
