@@ -1,0 +1,174 @@
+.page-container {
+	width: 100%;
+	height: 100%;
+	background-color: #ddd;
+}
+
+.phone-outline {
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 320px;
+	height: 540px;
+}
+
+.menu-bar {
+	color: white;
+	font-family: Satisfy;
+	height: 40px;
+	width: 100%;
+	background-color:#FF4C6F ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.main-view {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	bottom: 50px;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.set-button {
+	margin: 10px auto;	
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 180px;
+	height: 50px;
+	background-color: #FF4C6F;
+	color: white;
+	font-family: Satisfy;
+	font-size: 24px;
+	border-radius: 5px;
+	border: none;
+	top: 50%;
+	cursor: pointer;
+}
+
+.set-button:active, .set-button:hover, .set-button:visited {
+	background-color: #ff1946;
+}
+
+.clock {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 40px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.clock-text {
+	display: inline;
+	margin: 0;
+	font-size: 64px;
+	font-family: Helvetica Neue;
+	font-weight: 100;
+	color:#FF4C6F ;
+	position: relative;
+}
+
+.plusmn {
+	position: absolute;
+	top: 175px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	font-size: 24px;
+	color: #FF4C6F;
+	text-align: center;
+}
+
+select {
+	border-bottom: dotted 1px #FF4C6F;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: white;
+	color: #FF4C6F;
+
+	border-radius: 0;
+	font-weight: 100;
+	border: none;
+}
+
+.time-select {
+	font-size: 18px;
+}
+
+select:focus {
+	outline: none;
+}
+
+.menu-title {
+	margin: 0;
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: normal;
+}
+
+.tab-bar {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.tab-list {
+	padding: 4px 10px;
+	text-align: center;
+	margin: 0;
+}
+
+.tab-item {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 20px;
+	height: 42px;
+	width: calc(33% - 60px);
+	position: relative;
+}
+
+.tab-item.active .tab-label, .tab-item:hover .tab-label {
+	color: #FF0038;	
+}
+
+.tab-item.active .tab-icon, .tab-item:hover .tab-icon {
+	color: #FF0038;	
+	fill: currentColor;
+}
+
+.tab-icon {
+	color: #fcb9b8;
+	fill: currentColor;
+	position: absolute;
+	margin: auto;
+	height: 25px;
+	width: 25px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.tab-label {
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-weight: 200;
+	color: #FF4C6F;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	font-size: 11px;
+}
