@@ -49,3 +49,5 @@ build/Release
 node_modules
 
 .idea/
+node_modules/
+*.idea
