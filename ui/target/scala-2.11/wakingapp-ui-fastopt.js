@@ -999,6 +999,127 @@ ScalaJS.s.Lorg_widok_BasePage$class__$$init$__Lorg_widok_BasePage__V = (function
 ScalaJS.s.Lorg_widok_Buffer$class__$$init$__Lorg_widok_Buffer__V = (function($$this) {
   $$this.changes$1 = new ScalaJS.c.Lorg_widok_Buffer$$anon$1().init___Lorg_widok_Buffer($$this)
 });
+ScalaJS.s.Lorg_widok_Channel$class__bind__Lorg_widok_Channel__Lorg_widok_Channel__V = (function($$this, other) {
+  var obsOther = new ScalaJS.c.sr_ObjectRef().init___O(null);
+  var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(obsOther$1, other$1) {
+    return (function(x$7$2) {
+      var array = [ScalaJS.as.Lorg_widok_ReadChannel(obsOther$1.elem$1)];
+      var jsx$2 = ScalaJS.m.s_Predef$();
+      var i = 0;
+      while (true) {
+        if ((i < ScalaJS.uI(array["length"]))) {
+          var index = i;
+          var arg1 = array[index];
+          var cur = ScalaJS.as.Lorg_widok_ReadChannel(arg1);
+          var jsx$1 = other$1.children__Lorg_widok_Array().contains__O__Z(ScalaJS.as.Lorg_widok_ChildChannel(cur))
+        } else {
+          var jsx$1 = false
+        };
+        if (jsx$1) {
+          i = ((1 + i) | 0)
+        } else {
+          break
+        }
+      };
+      jsx$2.assume__Z__V((i === ScalaJS.uI(array["length"])));
+      var this$2 = other$1.children__Lorg_widok_Array();
+      var array$1 = this$2.elements$1;
+      var this$4 = ScalaJS.m.sci_List$();
+      var cbf = this$4.ReusableCBFInstance$2;
+      var b = cbf.apply__scm_Builder();
+      b.sizeHint__I__V(ScalaJS.uI(array$1["length"]));
+      b.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+      var this$5 = ScalaJS.as.sci_List(b.result__O());
+      var these = this$5;
+      while ((!these.isEmpty__Z())) {
+        var arg1$1 = these.head__O();
+        var child = ScalaJS.as.Lorg_widok_ChildChannel(arg1$1);
+        var i$1 = 0;
+        while (true) {
+          if ((i$1 < ScalaJS.uI(array["length"]))) {
+            var index$1 = i$1;
+            var arg1$2 = array[index$1];
+            var jsx$3 = (!ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(arg1$2, child))
+          } else {
+            var jsx$3 = false
+          };
+          if (jsx$3) {
+            i$1 = ((1 + i$1) | 0)
+          } else {
+            break
+          }
+        };
+        if ((i$1 === ScalaJS.uI(array["length"]))) {
+          child.process__O__V(x$7$2)
+        };
+        these = ScalaJS.as.sci_List(these.tail__O())
+      }
+    })
+  })(obsOther, other));
+  var obsThis = ScalaJS.s.Lorg_widok_ReadChannel$class__silentAttach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel($$this, f);
+  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer, obsThis$1) {
+    return (function(x$8$2) {
+      var array$2 = [obsThis$1];
+      var jsx$5 = ScalaJS.m.s_Predef$();
+      var i$2 = 0;
+      while (true) {
+        if ((i$2 < ScalaJS.uI(array$2["length"]))) {
+          var index$2 = i$2;
+          var arg1$3 = array$2[index$2];
+          var cur$1 = ScalaJS.as.Lorg_widok_ReadChannel(arg1$3);
+          var jsx$4 = arg$outer.children__Lorg_widok_Array().contains__O__Z(ScalaJS.as.Lorg_widok_ChildChannel(cur$1))
+        } else {
+          var jsx$4 = false
+        };
+        if (jsx$4) {
+          i$2 = ((1 + i$2) | 0)
+        } else {
+          break
+        }
+      };
+      jsx$5.assume__Z__V((i$2 === ScalaJS.uI(array$2["length"])));
+      var this$6 = arg$outer.children__Lorg_widok_Array();
+      var array$3 = this$6.elements$1;
+      var this$8 = ScalaJS.m.sci_List$();
+      var cbf$1 = this$8.ReusableCBFInstance$2;
+      var b$1 = cbf$1.apply__scm_Builder();
+      b$1.sizeHint__I__V(ScalaJS.uI(array$3["length"]));
+      b$1.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+      var this$9 = ScalaJS.as.sci_List(b$1.result__O());
+      var these$1 = this$9;
+      while ((!these$1.isEmpty__Z())) {
+        var arg1$4 = these$1.head__O();
+        var child$1 = ScalaJS.as.Lorg_widok_ChildChannel(arg1$4);
+        var i$3 = 0;
+        while (true) {
+          if ((i$3 < ScalaJS.uI(array$2["length"]))) {
+            var index$3 = i$3;
+            var arg1$5 = array$2[index$3];
+            var jsx$6 = (!ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(arg1$5, child$1))
+          } else {
+            var jsx$6 = false
+          };
+          if (jsx$6) {
+            i$3 = ((1 + i$3) | 0)
+          } else {
+            break
+          }
+        };
+        if ((i$3 === ScalaJS.uI(array$2["length"]))) {
+          child$1.process__O__V(x$8$2)
+        };
+        these$1 = ScalaJS.as.sci_List(these$1.tail__O())
+      }
+    })
+  })($$this, obsThis));
+  obsOther.elem$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__attach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(other, f$1);
+  var eta$0$1 = ScalaJS.as.Lorg_widok_UniChildChannel(obsThis);
+  $$this.flush__F1__V(new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(eta$0$1$1) {
+    return (function(value$2) {
+      eta$0$1$1.process__O__V(value$2)
+    })
+  })(eta$0$1)))
+});
 ScalaJS.s.Lorg_widok_ChildMap$class__remove__Lorg_widok_ChildMap__Lorg_widok_Ref__V = (function($$this, key) {
   var ref = ScalaJS.as.Lorg_widok_Ref($$this.mapping$1.apply__O__O(key));
   var this$1 = $$this.mapping$1;
@@ -1139,6 +1260,26 @@ ScalaJS.m.Lorg_widok_Helpers$ = (function() {
   };
   return ScalaJS.n.Lorg_widok_Helpers$
 });
+ScalaJS.s.Lorg_widok_Node$class__keyUp__Lorg_widok_Node__Lorg_widok_Channel = (function($$this) {
+  var f$1 = (function(arg$outer) {
+    return (function(x$20$2) {
+      var x$20 = ScalaJS.as.F1(x$20$2);
+      arg$outer.rendered__Lorg_scalajs_dom_HTMLElement()["onkeyup"] = (function(f) {
+        return (function(arg1) {
+          return f.apply__O__O(arg1)
+        })
+      })(x$20)
+    })
+  })($$this);
+  var ev = new ScalaJS.c.Lorg_widok_Channel$$anon$1().init___();
+  var arg1$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(ev$2) {
+    return (function(e$2) {
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(ev$2, e$2)
+    })
+  })(ev));
+  f$1(arg1$1);
+  return ev
+});
 ScalaJS.s.Lorg_widok_Node$class__change__Lorg_widok_Node__Lorg_widok_Channel = (function($$this) {
   var f$1 = (function(arg$outer) {
     return (function(x$23$2) {
@@ -1193,6 +1334,15 @@ ScalaJS.s.Lorg_widok_ReadChannel$class__forkUni__Lorg_widok_ReadChannel__F1__Z__
   };
   return ch
 });
+ScalaJS.s.Lorg_widok_ReadChannel$class__silentAttach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel = (function($$this, f) {
+  var observer = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(f$4) {
+    return (function(value$2) {
+      f$4.apply__O__O(value$2);
+      return new ScalaJS.c.Lorg_widok_Result$Next().init___s_Option(ScalaJS.m.s_None$())
+    })
+  })(f));
+  return ScalaJS.s.Lorg_widok_ReadChannel$class__forkUni__Lorg_widok_ReadChannel__F1__Z__Z__Lorg_widok_ReadChannel($$this, observer, true, false)
+});
 ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel = (function($$this, f) {
   var observer = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(f$7) {
     return (function(value$2) {
@@ -1200,6 +1350,21 @@ ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lor
     })
   })(f));
   return ScalaJS.s.Lorg_widok_ReadChannel$class__forkUni__Lorg_widok_ReadChannel__F1__Z__Z__Lorg_widok_ReadChannel($$this, observer, false, false)
+});
+ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel = (function($$this, count) {
+  ScalaJS.m.s_Predef$().assert__Z__V((count > 0));
+  var cnt = new ScalaJS.c.sr_IntRef().init___I(count);
+  var observer = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(cnt$2) {
+    return (function(value$2) {
+      if ((cnt$2.elem$1 > 0)) {
+        cnt$2.elem$1 = (((-1) + cnt$2.elem$1) | 0);
+        return new ScalaJS.c.Lorg_widok_Result$Next().init___s_Option(ScalaJS.m.s_None$())
+      } else {
+        return new ScalaJS.c.Lorg_widok_Result$Next().init___s_Option(new ScalaJS.c.s_Some().init___O(value$2))
+      }
+    })
+  })(cnt));
+  return ScalaJS.s.Lorg_widok_ReadChannel$class__forkUni__Lorg_widok_ReadChannel__F1__Z__Z__Lorg_widok_ReadChannel($$this, observer, true, false)
 });
 ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel = (function($$this, f) {
   var observer = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(f$6) {
@@ -1313,6 +1478,26 @@ ScalaJS.s.Lorg_widok_Widget$Input$Select$class__org$widok$Widget$Input$Select$$a
   var elem = new ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option().init___();
   elem.rendered$1["appendChild"](new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T(str).rendered$1);
   return elem
+});
+ScalaJS.s.Lorg_widok_Widget$Input$Text$class__liveValue__Lorg_widok_Widget$Input$Text__Lorg_widok_StateChannel = (function($$this) {
+  var change = $$this.keyUp__Lorg_widok_Channel();
+  var get = new ScalaJS.c.sjsr_AnonFunction0().init___sjs_js_Function0((function(arg$outer) {
+    return (function() {
+      return ScalaJS.as.T(arg$outer.rendered__Lorg_scalajs_dom_HTMLInputElement()["value"])
+    })
+  })($$this));
+  var set = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
+    return (function(x$3$2) {
+      var x$3 = ScalaJS.as.T(x$3$2);
+      arg$outer$1.rendered__Lorg_scalajs_dom_HTMLInputElement()["value"] = x$3
+    })
+  })($$this));
+  return new ScalaJS.c.Lorg_widok_PtrVar$$anon$2().init___Lorg_widok_ReadChannel__F0__F1(change, get, set)
+});
+ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text = (function($$this, ch) {
+  var this$1 = $$this.liveValue__Lorg_widok_StateChannel();
+  ScalaJS.s.Lorg_widok_Channel$class__bind__Lorg_widok_Channel__Lorg_widok_Channel__V(this$1, ch);
+  return $$this
 });
 ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget = (function($$this, cssTags) {
   var thiz = ScalaJS.as.T($$this.rendered__Lorg_scalajs_dom_HTMLElement()["className"]);
@@ -1922,6 +2107,70 @@ ScalaJS.s.Lwakingapp_helpers_Navigation$class__header__Lwakingapp_helpers_Naviga
   return ScalaJS.m.Lorg_widok_bindings_Bootstrap$NavigationBar$().apply__Lorg_widok_bindings_Bootstrap$NavigationBar$Position__Z__sc_Seq__Lorg_widok_bindings_HTML$Navigation(ScalaJS.m.Lorg_widok_bindings_Bootstrap$NavigationBar$Position$Top$(), true, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.m.Lorg_widok_bindings_Bootstrap$().Container__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.m.Lorg_widok_bindings_Bootstrap$NavigationBar$().Header__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.m.Lorg_widok_bindings_Bootstrap$NavigationBar$().Toggle__Lorg_widok_bindings_HTML$Button(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$NavigationBar$().Brand__sc_Seq__Lorg_widok_bindings_HTML$Anchor(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("WakingApp")]))]))]))]), 1)))
 });
 /** @constructor */
+ScalaJS.c.jl_Character$ = (function() {
+  ScalaJS.c.O.call(this);
+  this.TYPE$1 = null;
+  this.MIN$undVALUE$1 = 0;
+  this.MAX$undVALUE$1 = 0;
+  this.SIZE$1 = 0;
+  this.MIN$undRADIX$1 = 0;
+  this.MAX$undRADIX$1 = 0;
+  this.MIN$undHIGH$undSURROGATE$1 = 0;
+  this.MAX$undHIGH$undSURROGATE$1 = 0;
+  this.MIN$undLOW$undSURROGATE$1 = 0;
+  this.MAX$undLOW$undSURROGATE$1 = 0;
+  this.MIN$undSURROGATE$1 = 0;
+  this.MAX$undSURROGATE$1 = 0;
+  this.MIN$undCODE$undPOINT$1 = 0;
+  this.MAX$undCODE$undPOINT$1 = 0;
+  this.MIN$undSUPPLEMENTARY$undCODE$undPOINT$1 = 0;
+  this.HighSurrogateMask$1 = 0;
+  this.HighSurrogateID$1 = 0;
+  this.LowSurrogateMask$1 = 0;
+  this.LowSurrogateID$1 = 0;
+  this.SurrogateUsefulPartMask$1 = 0;
+  this.reUnicodeIdentStart$1 = null;
+  this.reUnicodeIdentPartExcl$1 = null;
+  this.reIdentIgnorable$1 = null;
+  this.bitmap$0$1 = 0
+});
+ScalaJS.c.jl_Character$.prototype = new ScalaJS.h.O();
+ScalaJS.c.jl_Character$.prototype.constructor = ScalaJS.c.jl_Character$;
+/** @constructor */
+ScalaJS.h.jl_Character$ = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.jl_Character$.prototype = ScalaJS.c.jl_Character$.prototype;
+ScalaJS.c.jl_Character$.prototype.digit__C__I__I = (function(c, radix) {
+  return (((radix > 36) || (radix < 2)) ? (-1) : ((((c >= 48) && (c <= 57)) && ((((-48) + c) | 0) < radix)) ? (((-48) + c) | 0) : ((((c >= 65) && (c <= 90)) && ((((-65) + c) | 0) < (((-10) + radix) | 0))) ? (((-55) + c) | 0) : ((((c >= 97) && (c <= 122)) && ((((-97) + c) | 0) < (((-10) + radix) | 0))) ? (((-87) + c) | 0) : ((((c >= 65313) && (c <= 65338)) && ((((-65313) + c) | 0) < (((-10) + radix) | 0))) ? (((-65303) + c) | 0) : ((((c >= 65345) && (c <= 65370)) && ((((-65345) + c) | 0) < (((-10) + radix) | 0))) ? (((-65303) + c) | 0) : (-1)))))))
+});
+ScalaJS.is.jl_Character$ = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.jl_Character$)))
+});
+ScalaJS.as.jl_Character$ = (function(obj) {
+  return ((ScalaJS.is.jl_Character$(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "java.lang.Character$"))
+});
+ScalaJS.isArrayOf.jl_Character$ = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Character$)))
+});
+ScalaJS.asArrayOf.jl_Character$ = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.jl_Character$(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Ljava.lang.Character$;", depth))
+});
+ScalaJS.d.jl_Character$ = new ScalaJS.ClassTypeData({
+  jl_Character$: 0
+}, false, "java.lang.Character$", ScalaJS.d.O, {
+  jl_Character$: 1,
+  O: 1
+});
+ScalaJS.c.jl_Character$.prototype.$classData = ScalaJS.d.jl_Character$;
+ScalaJS.n.jl_Character$ = (void 0);
+ScalaJS.m.jl_Character$ = (function() {
+  if ((!ScalaJS.n.jl_Character$)) {
+    ScalaJS.n.jl_Character$ = new ScalaJS.c.jl_Character$().init___()
+  };
+  return ScalaJS.n.jl_Character$
+});
+/** @constructor */
 ScalaJS.c.jl_Class = (function() {
   ScalaJS.c.O.call(this);
   this.data$1 = null
@@ -2065,6 +2314,46 @@ ScalaJS.h.jl_Integer$ = (function() {
   /*<skip>*/
 });
 ScalaJS.h.jl_Integer$.prototype = ScalaJS.c.jl_Integer$.prototype;
+ScalaJS.c.jl_Integer$.prototype.fail$1__p1__T__sr_Nothing$ = (function(s$1) {
+  throw new ScalaJS.c.jl_NumberFormatException().init___T(new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["For input string: \"", "\""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([s$1])))
+});
+ScalaJS.c.jl_Integer$.prototype.parseInt__T__I__I = (function(s, radix) {
+  if ((s === null)) {
+    var jsx$1 = true
+  } else {
+    var this$2 = new ScalaJS.c.sci_StringOps().init___T(s);
+    var $$this = this$2.repr$1;
+    var jsx$1 = (ScalaJS.uI($$this["length"]) === 0)
+  };
+  if (((jsx$1 || (radix < 2)) || (radix > 36))) {
+    this.fail$1__p1__T__sr_Nothing$(s)
+  } else {
+    var i = ((((65535 & ScalaJS.uI(s["charCodeAt"](0))) === 45) || ((65535 & ScalaJS.uI(s["charCodeAt"](0))) === 43)) ? 1 : 0);
+    var this$12 = new ScalaJS.c.sci_StringOps().init___T(s);
+    var $$this$1 = this$12.repr$1;
+    if ((ScalaJS.uI($$this$1["length"]) <= i)) {
+      this.fail$1__p1__T__sr_Nothing$(s)
+    } else {
+      while (true) {
+        var jsx$2 = i;
+        var this$16 = new ScalaJS.c.sci_StringOps().init___T(s);
+        var $$this$2 = this$16.repr$1;
+        if ((jsx$2 < ScalaJS.uI($$this$2["length"]))) {
+          var jsx$3 = ScalaJS.m.jl_Character$();
+          var index = i;
+          if ((jsx$3.digit__C__I__I((65535 & ScalaJS.uI(s["charCodeAt"](index))), radix) < 0)) {
+            this.fail$1__p1__T__sr_Nothing$(s)
+          };
+          i = ((1 + i) | 0)
+        } else {
+          break
+        }
+      };
+      var res = ScalaJS.uD(ScalaJS.g["parseInt"](s, radix));
+      return ((((res !== res) || (res > 2147483647)) || (res < (-2147483648))) ? this.fail$1__p1__T__sr_Nothing$(s) : (res | 0))
+    }
+  }
+});
 ScalaJS.c.jl_Integer$.prototype.rotateLeft__I__I__I = (function(i, distance) {
   return ((i << distance) | ((i >>> ((-distance) | 0)) | 0))
 });
@@ -14101,6 +14390,185 @@ ScalaJS.m.Lwakingapp_pages_Calendar$ = (function() {
   return ScalaJS.n.Lwakingapp_pages_Calendar$
 });
 /** @constructor */
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4 = (function() {
+  ScalaJS.c.sr_AbstractFunction1.call(this);
+  this.$$outer$2 = null
+});
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype = new ScalaJS.h.sr_AbstractFunction1();
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.constructor = ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4;
+/** @constructor */
+ScalaJS.h.Lwakingapp_pages_Calendar$$anonfun$4 = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.Lwakingapp_pages_Calendar$$anonfun$4.prototype = ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype;
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.apply__O__O = (function(v1) {
+  this.apply__sjs_js_Dynamic__V(v1)
+});
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.apply__sjs_js_Dynamic__V = (function(json) {
+  var this$1 = this.$$outer$2.alarmTime$1;
+  var value = ScalaJS.objectToString(json["alarmTime"]);
+  var array = [this.$$outer$2.ignAlarmTime$1];
+  var jsx$2 = ScalaJS.m.s_Predef$();
+  var i = 0;
+  while (true) {
+    if ((i < ScalaJS.uI(array["length"]))) {
+      var index = i;
+      var arg1 = array[index];
+      var cur = ScalaJS.as.Lorg_widok_ReadChannel(arg1);
+      var jsx$1 = this$1.children$1.contains__O__Z(ScalaJS.as.Lorg_widok_ChildChannel(cur))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      i = ((1 + i) | 0)
+    } else {
+      break
+    }
+  };
+  jsx$2.assume__Z__V((i === ScalaJS.uI(array["length"])));
+  var this$2 = this$1.children$1;
+  var array$1 = this$2.elements$1;
+  var this$4 = ScalaJS.m.sci_List$();
+  var cbf = this$4.ReusableCBFInstance$2;
+  var b = cbf.apply__scm_Builder();
+  b.sizeHint__I__V(ScalaJS.uI(array$1["length"]));
+  b.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  var this$5 = ScalaJS.as.sci_List(b.result__O());
+  var these = this$5;
+  while ((!these.isEmpty__Z())) {
+    var arg1$1 = these.head__O();
+    var child = ScalaJS.as.Lorg_widok_ChildChannel(arg1$1);
+    var i$1 = 0;
+    while (true) {
+      if ((i$1 < ScalaJS.uI(array["length"]))) {
+        var index$1 = i$1;
+        var arg1$2 = array[index$1];
+        var jsx$3 = (!ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(arg1$2, child))
+      } else {
+        var jsx$3 = false
+      };
+      if (jsx$3) {
+        i$1 = ((1 + i$1) | 0)
+      } else {
+        break
+      }
+    };
+    if ((i$1 === ScalaJS.uI(array["length"]))) {
+      child.process__O__V(value)
+    };
+    these = ScalaJS.as.sci_List(these.tail__O())
+  };
+  var this$12 = this.$$outer$2.timeRange$1;
+  var this$6 = this.$$outer$2.times$1;
+  var this$7 = this$6.elements$1;
+  var len = this$7.size0$6;
+  var i$2 = 0;
+  while (true) {
+    if ((i$2 < len)) {
+      var idx = i$2;
+      var arg1$3 = ScalaJS.s.scm_ResizableArray$class__apply__scm_ResizableArray__I__O(this$7, idx);
+      var x$3 = ScalaJS.as.Lorg_widok_Ref(arg1$3);
+      var jsx$5 = ScalaJS.uI(x$3.get$1);
+      var x = ScalaJS.objectToString(json["timeRange"]);
+      var this$9 = new ScalaJS.c.sci_StringOps().init___T(x);
+      var this$11 = ScalaJS.m.jl_Integer$();
+      var s = this$9.repr$1;
+      var jsx$4 = (!(jsx$5 === this$11.parseInt__T__I__I(s, 10)))
+    } else {
+      var jsx$4 = false
+    };
+    if (jsx$4) {
+      i$2 = ((1 + i$2) | 0)
+    } else {
+      break
+    }
+  };
+  var i$3 = i$2;
+  var value$1 = ((i$3 < this$7.size0$6) ? new ScalaJS.c.s_Some().init___O(ScalaJS.s.scm_ResizableArray$class__apply__scm_ResizableArray__I__O(this$7, i$3)) : ScalaJS.m.s_None$());
+  var array$2 = [this.$$outer$2.ignTimeRange$1];
+  var jsx$7 = ScalaJS.m.s_Predef$();
+  var i$4 = 0;
+  while (true) {
+    if ((i$4 < ScalaJS.uI(array$2["length"]))) {
+      var index$2 = i$4;
+      var arg1$4 = array$2[index$2];
+      var cur$1 = ScalaJS.as.Lorg_widok_ReadChannel(arg1$4);
+      var jsx$6 = this$12.children$1.contains__O__Z(ScalaJS.as.Lorg_widok_ChildChannel(cur$1))
+    } else {
+      var jsx$6 = false
+    };
+    if (jsx$6) {
+      i$4 = ((1 + i$4) | 0)
+    } else {
+      break
+    }
+  };
+  jsx$7.assume__Z__V((i$4 === ScalaJS.uI(array$2["length"])));
+  var this$13 = this$12.children$1;
+  var array$3 = this$13.elements$1;
+  var this$15 = ScalaJS.m.sci_List$();
+  var cbf$1 = this$15.ReusableCBFInstance$2;
+  var b$1 = cbf$1.apply__scm_Builder();
+  b$1.sizeHint__I__V(ScalaJS.uI(array$3["length"]));
+  b$1.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+  var this$16 = ScalaJS.as.sci_List(b$1.result__O());
+  var these$1 = this$16;
+  while ((!these$1.isEmpty__Z())) {
+    var arg1$5 = these$1.head__O();
+    var child$1 = ScalaJS.as.Lorg_widok_ChildChannel(arg1$5);
+    var i$5 = 0;
+    while (true) {
+      if ((i$5 < ScalaJS.uI(array$2["length"]))) {
+        var index$3 = i$5;
+        var arg1$6 = array$2[index$3];
+        var jsx$8 = (!ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(arg1$6, child$1))
+      } else {
+        var jsx$8 = false
+      };
+      if (jsx$8) {
+        i$5 = ((1 + i$5) | 0)
+      } else {
+        break
+      }
+    };
+    if ((i$5 === ScalaJS.uI(array$2["length"]))) {
+      child$1.process__O__V(value$1)
+    };
+    these$1 = ScalaJS.as.sci_List(these$1.tail__O())
+  }
+});
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.init___Lwakingapp_pages_Calendar = (function($$outer) {
+  if (($$outer === null)) {
+    throw ScalaJS.m.sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  return this
+});
+ScalaJS.is.Lwakingapp_pages_Calendar$$anonfun$4 = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lwakingapp_pages_Calendar$$anonfun$4)))
+});
+ScalaJS.as.Lwakingapp_pages_Calendar$$anonfun$4 = (function(obj) {
+  return ((ScalaJS.is.Lwakingapp_pages_Calendar$$anonfun$4(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "wakingapp.pages.Calendar$$anonfun$4"))
+});
+ScalaJS.isArrayOf.Lwakingapp_pages_Calendar$$anonfun$4 = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lwakingapp_pages_Calendar$$anonfun$4)))
+});
+ScalaJS.asArrayOf.Lwakingapp_pages_Calendar$$anonfun$4 = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.Lwakingapp_pages_Calendar$$anonfun$4(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Lwakingapp.pages.Calendar$$anonfun$4;", depth))
+});
+ScalaJS.d.Lwakingapp_pages_Calendar$$anonfun$4 = new ScalaJS.ClassTypeData({
+  Lwakingapp_pages_Calendar$$anonfun$4: 0
+}, false, "wakingapp.pages.Calendar$$anonfun$4", ScalaJS.d.sr_AbstractFunction1, {
+  Lwakingapp_pages_Calendar$$anonfun$4: 1,
+  sr_AbstractFunction1: 1,
+  O: 1,
+  F1: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.$classData = ScalaJS.d.Lwakingapp_pages_Calendar$$anonfun$4;
+/** @constructor */
 ScalaJS.c.Lwakingapp_pages_NotFound$ = (function() {
   ScalaJS.c.sr_AbstractFunction0.call(this)
 });
@@ -17015,6 +17483,41 @@ ScalaJS.d.T2 = new ScalaJS.ClassTypeData({
   Ljava_io_Serializable: 1
 });
 ScalaJS.c.T2.prototype.$classData = ScalaJS.d.T2;
+/** @constructor */
+ScalaJS.c.jl_NumberFormatException = (function() {
+  ScalaJS.c.jl_IllegalArgumentException.call(this)
+});
+ScalaJS.c.jl_NumberFormatException.prototype = new ScalaJS.h.jl_IllegalArgumentException();
+ScalaJS.c.jl_NumberFormatException.prototype.constructor = ScalaJS.c.jl_NumberFormatException;
+/** @constructor */
+ScalaJS.h.jl_NumberFormatException = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.jl_NumberFormatException.prototype = ScalaJS.c.jl_NumberFormatException.prototype;
+ScalaJS.is.jl_NumberFormatException = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.jl_NumberFormatException)))
+});
+ScalaJS.as.jl_NumberFormatException = (function(obj) {
+  return ((ScalaJS.is.jl_NumberFormatException(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "java.lang.NumberFormatException"))
+});
+ScalaJS.isArrayOf.jl_NumberFormatException = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_NumberFormatException)))
+});
+ScalaJS.asArrayOf.jl_NumberFormatException = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.jl_NumberFormatException(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Ljava.lang.NumberFormatException;", depth))
+});
+ScalaJS.d.jl_NumberFormatException = new ScalaJS.ClassTypeData({
+  jl_NumberFormatException: 0
+}, false, "java.lang.NumberFormatException", ScalaJS.d.jl_IllegalArgumentException, {
+  jl_NumberFormatException: 1,
+  jl_IllegalArgumentException: 1,
+  jl_RuntimeException: 1,
+  jl_Exception: 1,
+  jl_Throwable: 1,
+  O: 1,
+  Ljava_io_Serializable: 1
+});
+ScalaJS.c.jl_NumberFormatException.prototype.$classData = ScalaJS.d.jl_NumberFormatException;
 /** @constructor */
 ScalaJS.c.s_None$ = (function() {
   ScalaJS.c.s_Option.call(this)
@@ -23879,10 +24382,13 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Table$Row.prototype.$classData = ScalaJS.d.Lo
 /** @constructor */
 ScalaJS.c.Lwakingapp_pages_Calendar = (function() {
   ScalaJS.c.O.call(this);
-  this.ws$1 = null;
+  this.alarmTime$1 = null;
+  this.socket$1 = null;
   this.currentTime$1 = null;
   this.times$1 = null;
-  this.selection$1 = null;
+  this.timeRange$1 = null;
+  this.ignAlarmTime$1 = null;
+  this.ignTimeRange$1 = null;
   this.node$1 = null
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype = new ScalaJS.h.O();
@@ -23897,27 +24403,8 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productPrefix__T = (function() {
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
   ScalaJS.s.Lorg_widok_BasePage$class__$$init$__Lorg_widok_BasePage__V(this);
-  this.ws$1 = new ScalaJS.g["WebSocket"]("ws://10.100.93.15:3000");
-  this.ws$1["onmessage"] = (function(arg$outer) {
-    return (function(x$2) {
-      var s = ScalaJS.objectToString(x$2["data"]);
-      var this$2 = ScalaJS.m.s_Console$();
-      var this$3 = this$2.outVar$2;
-      ScalaJS.as.Ljava_io_PrintStream(this$3.tl$1.get__O()).println__O__V(s)
-    })
-  })(this);
-  this.ws$1["onopen"] = (function(x$2$1) {
-    return (void 0)
-  });
-  this.ws$1["onerror"] = (function(x$2$2) {
-    var this$4 = ScalaJS.m.s_Console$();
-    var x = ("some error has occured " + ScalaJS.as.T(x$2$2["message"]));
-    var this$5 = this$4.outVar$2;
-    ScalaJS.as.Ljava_io_PrintStream(this$5.tl$1.get__O()).println__O__V(x)
-  });
-  this.ws$1["onclose"] = (function(x$2$3) {
-    return (void 0)
-  });
+  this.alarmTime$1 = new ScalaJS.c.Lorg_widok_Var().init___O("");
+  this.socket$1 = ScalaJS.g["io"]("http://10.100.93.15");
   this.currentTime$1 = new ScalaJS.c.Lorg_widok_Channel$$anon$1().init___();
   var array = [0, 30, 60, 90, 120, 150];
   var buf = new ScalaJS.c.Lorg_widok_Buffer$$anon$2().init___();
@@ -23930,37 +24417,53 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
     i = ((1 + i) | 0)
   };
   this.times$1 = buf;
-  this.selection$1 = new ScalaJS.c.Lorg_widok_Channel$$anon$1().init___();
-  var this$12 = this.selection$1;
-  var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x$2$4) {
-    var x$1 = ScalaJS.as.s_Option(x$2$4);
-    var this$10 = ScalaJS.m.s_Console$();
-    var this$11 = this$10.outVar$2;
-    ScalaJS.as.Ljava_io_PrintStream(this$11.tl$1.get__O()).println__O__V(x$1)
-  }));
-  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$12, f);
-  ScalaJS.g["setInterval"]((function(arg$outer$1) {
+  var this$5 = this.times$1;
+  var this$6 = this$5.elements$1;
+  this.timeRange$1 = new ScalaJS.c.Lorg_widok_Var().init___O(new ScalaJS.c.s_Some().init___O(ScalaJS.s.sc_IndexedSeqOptimized$class__head__sc_IndexedSeqOptimized__O(this$6)));
+  var this$7 = this.alarmTime$1;
+  this.ignAlarmTime$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$7, 1);
+  var this$8 = this.ignAlarmTime$1;
+  var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
+    return (function(x$1$2) {
+      ScalaJS.as.T(x$1$2);
+      arg$outer.sendSettings__V()
+    })
+  })(this));
+  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$8, f);
+  var this$9 = this.timeRange$1;
+  this.ignTimeRange$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$9, 1);
+  var this$10 = this.timeRange$1;
+  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
+    return (function(x$2$2) {
+      ScalaJS.as.s_Option(x$2$2);
+      arg$outer$1.sendSettings__V()
+    })
+  })(this));
+  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$10, f$1);
+  this.socket$1["on"]("settings", (function(f$2) {
+    return (function(arg1$1) {
+      return f$2.apply__O__O(arg1$1)
+    })
+  })(new ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4().init___Lwakingapp_pages_Calendar(this)));
+  ScalaJS.g["setInterval"]((function(arg$outer$2) {
     return (function() {
-      var this$13 = arg$outer$1.currentTime$1;
+      var this$12 = arg$outer$2.currentTime$1;
       var v = new ScalaJS.g["Date"]();
-      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$13, v)
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$12, v)
     })
   })(this), 1000);
   return this
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (function() {
-  var jsx$17 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$16 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
-  var jsx$15 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$14 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
-  var jsx$13 = ScalaJS.m.s_Predef$();
-  var this$2 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$().Text__Lorg_widok_bindings_HTML$Input$Text();
-  var jsx$12 = jsx$15.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$14, 3, jsx$13.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_bindings_HTML$Input$Textual$class__placeholder__Lorg_widok_bindings_HTML$Input$Textual__T__Lorg_widok_bindings_HTML$Input$Textual(this$2, "hh:mm")]), 1)));
+  var jsx$13 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$12 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
   var jsx$11 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   var jsx$10 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
   var jsx$9 = ScalaJS.m.s_Predef$();
-  var this$3 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$().Text__Lorg_widok_bindings_HTML$Input$Text();
-  var jsx$8 = jsx$11.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$10, 3, jsx$9.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_bindings_HTML$Input$Textual$class__placeholder__Lorg_widok_bindings_HTML$Input$Textual__T__Lorg_widok_bindings_HTML$Input$Textual(this$3, "hh:mm")]), 1)));
+  var this$2 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$().Text__Lorg_widok_bindings_HTML$Input$Text();
+  var this$3 = ScalaJS.s.Lorg_widok_bindings_HTML$Input$Textual$class__placeholder__Lorg_widok_bindings_HTML$Input$Textual__T__Lorg_widok_bindings_HTML$Input$Textual(this$2, "hh:mm");
+  var ch = this.alarmTime$1;
+  var jsx$8 = jsx$11.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$10, 3, jsx$9.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text(this$3, ch)]), 1)));
   var jsx$7 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   var jsx$6 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
   var jsx$5 = ScalaJS.m.s_Predef$();
@@ -23975,8 +24478,8 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
     return ScalaJS.m.Lwakingapp_helpers_Format$().minutes__I__T(min)
   }));
   var map = new ScalaJS.c.Lorg_widok_BufMap().init___Lorg_widok_ReadBuffer__F1(this$7, f);
-  var selection = this.selection$1;
-  var jsx$3 = jsx$17.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$16, jsx$12, jsx$8, jsx$7.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$6, 3, jsx$5.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
+  var selection = this.timeRange$1;
+  var jsx$3 = jsx$13.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$12, jsx$8, jsx$7.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$6, 3, jsx$5.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
   var jsx$2 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
@@ -23990,6 +24493,17 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
   var this$12 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$1);
   var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-2 col-md-offset-5"]);
   return new ScalaJS.c.Lorg_widok_Inline().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$3, jsx$2.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$12, cssTags)]))]))
+});
+ScalaJS.c.Lwakingapp_pages_Calendar.prototype.sendSettings__V = (function() {
+  var jsx$1 = this.socket$1;
+  var this$2 = this.alarmTime$1;
+  var s = ScalaJS.as.T(this$2.org$widok$Var$$v$1);
+  var this$4 = this.timeRange$1;
+  var value = ScalaJS.uI(ScalaJS.as.Lorg_widok_Ref(ScalaJS.as.s_Option(this$4.org$widok$Var$$v$1).get__O()).get$1);
+  jsx$1["emit"]("settings", {
+    "alarmTime": s,
+    "timeRange": value
+  })
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productArity__I = (function() {
   return 0
@@ -24998,11 +25512,31 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.productElement__I__O
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.toString__T = (function() {
   return ScalaJS.m.sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.keyUp__Lorg_widok_Channel = (function() {
+  return (((4096 & this.bitmap$0$1) === 0) ? this.keyUp$lzycompute__p1__Lorg_widok_Channel() : this.keyUp$1)
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.rendered__Lorg_scalajs_dom_HTMLElement = (function() {
   return this.rendered$1
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.keyUp$lzycompute__p1__Lorg_widok_Channel = (function() {
+  if (((4096 & this.bitmap$0$1) === 0)) {
+    this.keyUp$1 = ScalaJS.s.Lorg_widok_Node$class__keyUp__Lorg_widok_Node__Lorg_widok_Channel(this);
+    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
+  };
+  return this.keyUp$1
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.liveValue__Lorg_widok_StateChannel = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.liveValue$lzycompute__p1__Lorg_widok_StateChannel() : this.liveValue$1)
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.render__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__V = (function(parent, offset) {
   ScalaJS.m.Lorg_widok_DOM$().insertAfter__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__V(parent, offset, this.rendered$1)
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.liveValue$lzycompute__p1__Lorg_widok_StateChannel = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    this.liveValue$1 = ScalaJS.s.Lorg_widok_Widget$Input$Text$class__liveValue__Lorg_widok_Widget$Input$Text__Lorg_widok_StateChannel(this);
+    this.bitmap$0$1 = (2 | this.bitmap$0$1)
+  };
+  return this.liveValue$1
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
   this.rendered$1 = x$1
@@ -25099,11 +25633,31 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.productElement__I__O = (
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.toString__T = (function() {
   return ScalaJS.m.sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.keyUp__Lorg_widok_Channel = (function() {
+  return (((4096 & this.bitmap$0$1) === 0) ? this.keyUp$lzycompute__p1__Lorg_widok_Channel() : this.keyUp$1)
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.rendered__Lorg_scalajs_dom_HTMLElement = (function() {
   return this.rendered$1
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.keyUp$lzycompute__p1__Lorg_widok_Channel = (function() {
+  if (((4096 & this.bitmap$0$1) === 0)) {
+    this.keyUp$1 = ScalaJS.s.Lorg_widok_Node$class__keyUp__Lorg_widok_Node__Lorg_widok_Channel(this);
+    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
+  };
+  return this.keyUp$1
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.liveValue__Lorg_widok_StateChannel = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.liveValue$lzycompute__p1__Lorg_widok_StateChannel() : this.liveValue$1)
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.render__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__V = (function(parent, offset) {
   ScalaJS.m.Lorg_widok_DOM$().insertAfter__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__Lorg_scalajs_dom_Node__V(parent, offset, this.rendered$1)
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.liveValue$lzycompute__p1__Lorg_widok_StateChannel = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    this.liveValue$1 = ScalaJS.s.Lorg_widok_Widget$Input$Text$class__liveValue__Lorg_widok_Widget$Input$Text__Lorg_widok_StateChannel(this);
+    this.bitmap$0$1 = (2 | this.bitmap$0$1)
+  };
+  return this.liveValue$1
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
   this.rendered$1 = x$1
@@ -25900,6 +26454,129 @@ ScalaJS.d.Lorg_widok_LazyVar$$anon$1 = new ScalaJS.ClassTypeData({
   Lorg_widok_ChannelDefaultSize: 1
 });
 ScalaJS.c.Lorg_widok_LazyVar$$anon$1.prototype.$classData = ScalaJS.d.Lorg_widok_LazyVar$$anon$1;
+/** @constructor */
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2 = (function() {
+  ScalaJS.c.O.call(this);
+  this.sub$1 = null;
+  this.get$1$1 = null;
+  this.children$1 = null
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype = new ScalaJS.h.O();
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.constructor = ScalaJS.c.Lorg_widok_PtrVar$$anon$2;
+/** @constructor */
+ScalaJS.h.Lorg_widok_PtrVar$$anon$2 = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.Lorg_widok_PtrVar$$anon$2.prototype = ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype;
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.init___Lorg_widok_ReadChannel__F0__F1 = (function(change$1, get$1, set$1) {
+  this.get$1$1 = get$1;
+  this.children$1 = new ScalaJS.c.Lorg_widok_Array().init___();
+  this.sub$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__attach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this, set$1);
+  var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
+    return (function(x$2$2) {
+      arg$outer.produce__V()
+    })
+  })(this));
+  ScalaJS.s.Lorg_widok_ReadChannel$class__attach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(change$1, f);
+  return this
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.toString__T = (function() {
+  return new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["PtrVar(", ")"])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.objectToString(this.get$1$1.apply__O())]))
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.flush__F1__V = (function(f) {
+  f.apply__O__O(this.get$1$1.apply__O())
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.produce__ = (function() {
+  this.produce__V()
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.children__Lorg_widok_Array = (function() {
+  return this.children$1
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.produce__V = (function() {
+  var value = this.get$1$1.apply__O();
+  var array = [this.sub$1];
+  var jsx$2 = ScalaJS.m.s_Predef$();
+  var i = 0;
+  while (true) {
+    if ((i < ScalaJS.uI(array["length"]))) {
+      var index = i;
+      var arg1 = array[index];
+      var cur = ScalaJS.as.Lorg_widok_ReadChannel(arg1);
+      var jsx$1 = this.children$1.contains__O__Z(ScalaJS.as.Lorg_widok_ChildChannel(cur))
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      i = ((1 + i) | 0)
+    } else {
+      break
+    }
+  };
+  jsx$2.assume__Z__V((i === ScalaJS.uI(array["length"])));
+  var this$1 = this.children$1;
+  var array$1 = this$1.elements$1;
+  var this$3 = ScalaJS.m.sci_List$();
+  var cbf = this$3.ReusableCBFInstance$2;
+  var b = cbf.apply__scm_Builder();
+  b.sizeHint__I__V(ScalaJS.uI(array$1["length"]));
+  b.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  var this$4 = ScalaJS.as.sci_List(b.result__O());
+  var these = this$4;
+  while ((!these.isEmpty__Z())) {
+    var arg1$1 = these.head__O();
+    var child = ScalaJS.as.Lorg_widok_ChildChannel(arg1$1);
+    var i$1 = 0;
+    while (true) {
+      if ((i$1 < ScalaJS.uI(array["length"]))) {
+        var index$1 = i$1;
+        var arg1$2 = array[index$1];
+        var jsx$3 = (!ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(arg1$2, child))
+      } else {
+        var jsx$3 = false
+      };
+      if (jsx$3) {
+        i$1 = ((1 + i$1) | 0)
+      } else {
+        break
+      }
+    };
+    if ((i$1 === ScalaJS.uI(array["length"]))) {
+      child.process__O__V(value)
+    };
+    these = ScalaJS.as.sci_List(these.tail__O())
+  }
+});
+ScalaJS.is.Lorg_widok_PtrVar$$anon$2 = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lorg_widok_PtrVar$$anon$2)))
+});
+ScalaJS.as.Lorg_widok_PtrVar$$anon$2 = (function(obj) {
+  return ((ScalaJS.is.Lorg_widok_PtrVar$$anon$2(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "org.widok.PtrVar$$anon$2"))
+});
+ScalaJS.isArrayOf.Lorg_widok_PtrVar$$anon$2 = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lorg_widok_PtrVar$$anon$2)))
+});
+ScalaJS.asArrayOf.Lorg_widok_PtrVar$$anon$2 = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.Lorg_widok_PtrVar$$anon$2(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Lorg.widok.PtrVar$$anon$2;", depth))
+});
+ScalaJS.d.Lorg_widok_PtrVar$$anon$2 = new ScalaJS.ClassTypeData({
+  Lorg_widok_PtrVar$$anon$2: 0
+}, false, "org.widok.PtrVar$$anon$2", ScalaJS.d.O, {
+  Lorg_widok_PtrVar$$anon$2: 1,
+  O: 1,
+  Lorg_widok_StateChannel: 1,
+  Lorg_widok_Channel: 1,
+  Lorg_widok_ReadChannel: 1,
+  Lorg_widok_StreamFunctions: 1,
+  Lorg_widok_FilterFunctions: 1,
+  Lorg_widok_FoldFunctions: 1,
+  Lorg_widok_MapFunctions: 1,
+  Lorg_widok_IterateFunctions: 1,
+  Lorg_widok_SizeFunctions: 1,
+  Lorg_widok_Disposable: 1,
+  Lorg_widok_WriteChannel: 1,
+  Lorg_widok_ChannelDefaultSize: 1
+});
+ScalaJS.c.Lorg_widok_PtrVar$$anon$2.prototype.$classData = ScalaJS.d.Lorg_widok_PtrVar$$anon$2;
 ScalaJS.is.sc_LinearSeqOptimized = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.sc_LinearSeqOptimized)))
 });
@@ -26337,6 +27014,108 @@ ScalaJS.d.Lorg_widok_Opt = new ScalaJS.ClassTypeData({
   Ljava_io_Serializable: 1
 });
 ScalaJS.c.Lorg_widok_Opt.prototype.$classData = ScalaJS.d.Lorg_widok_Opt;
+/** @constructor */
+ScalaJS.c.Lorg_widok_Var = (function() {
+  ScalaJS.c.O.call(this);
+  this.org$widok$Var$$v$1 = null;
+  this.children$1 = null
+});
+ScalaJS.c.Lorg_widok_Var.prototype = new ScalaJS.h.O();
+ScalaJS.c.Lorg_widok_Var.prototype.constructor = ScalaJS.c.Lorg_widok_Var;
+/** @constructor */
+ScalaJS.h.Lorg_widok_Var = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.Lorg_widok_Var.prototype = ScalaJS.c.Lorg_widok_Var.prototype;
+ScalaJS.c.Lorg_widok_Var.prototype.productPrefix__T = (function() {
+  return "Var"
+});
+ScalaJS.c.Lorg_widok_Var.prototype.productArity__I = (function() {
+  return 1
+});
+ScalaJS.c.Lorg_widok_Var.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if (ScalaJS.is.Lorg_widok_Var(x$1)) {
+    var Var$1 = ScalaJS.as.Lorg_widok_Var(x$1);
+    return ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(this.org$widok$Var$$v$1, Var$1.org$widok$Var$$v$1)
+  } else {
+    return false
+  }
+});
+ScalaJS.c.Lorg_widok_Var.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0:
+      {
+        return this.org$widok$Var$$v$1;
+        break
+      };
+    default:
+      throw new ScalaJS.c.jl_IndexOutOfBoundsException().init___T(("" + x$1));
+  }
+});
+ScalaJS.c.Lorg_widok_Var.prototype.flush__F1__V = (function(f) {
+  f.apply__O__O(this.org$widok$Var$$v$1)
+});
+ScalaJS.c.Lorg_widok_Var.prototype.toString__T = (function() {
+  return new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["Var(", ")"])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.objectToString(this.org$widok$Var$$v$1)]))
+});
+ScalaJS.c.Lorg_widok_Var.prototype.init___O = (function(v) {
+  this.org$widok$Var$$v$1 = v;
+  this.children$1 = new ScalaJS.c.Lorg_widok_Array().init___();
+  var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
+    return (function(x$1$2) {
+      arg$outer.org$widok$Var$$v$1 = x$1$2
+    })
+  })(this));
+  ScalaJS.s.Lorg_widok_ReadChannel$class__attach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this, f);
+  return this
+});
+ScalaJS.c.Lorg_widok_Var.prototype.hashCode__I = (function() {
+  var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+ScalaJS.c.Lorg_widok_Var.prototype.children__Lorg_widok_Array = (function() {
+  return this.children$1
+});
+ScalaJS.c.Lorg_widok_Var.prototype.productIterator__sc_Iterator = (function() {
+  return new ScalaJS.c.sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+ScalaJS.is.Lorg_widok_Var = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lorg_widok_Var)))
+});
+ScalaJS.as.Lorg_widok_Var = (function(obj) {
+  return ((ScalaJS.is.Lorg_widok_Var(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "org.widok.Var"))
+});
+ScalaJS.isArrayOf.Lorg_widok_Var = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lorg_widok_Var)))
+});
+ScalaJS.asArrayOf.Lorg_widok_Var = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.Lorg_widok_Var(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Lorg.widok.Var;", depth))
+});
+ScalaJS.d.Lorg_widok_Var = new ScalaJS.ClassTypeData({
+  Lorg_widok_Var: 0
+}, false, "org.widok.Var", ScalaJS.d.O, {
+  Lorg_widok_Var: 1,
+  O: 1,
+  Lorg_widok_StateChannel: 1,
+  Lorg_widok_Channel: 1,
+  Lorg_widok_ReadChannel: 1,
+  Lorg_widok_StreamFunctions: 1,
+  Lorg_widok_FilterFunctions: 1,
+  Lorg_widok_FoldFunctions: 1,
+  Lorg_widok_MapFunctions: 1,
+  Lorg_widok_IterateFunctions: 1,
+  Lorg_widok_SizeFunctions: 1,
+  Lorg_widok_Disposable: 1,
+  Lorg_widok_WriteChannel: 1,
+  Lorg_widok_ChannelDefaultSize: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+ScalaJS.c.Lorg_widok_Var.prototype.$classData = ScalaJS.d.Lorg_widok_Var;
 /** @constructor */
 ScalaJS.c.sc_AbstractIterable = (function() {
   ScalaJS.c.sc_AbstractTraversable.call(this)
