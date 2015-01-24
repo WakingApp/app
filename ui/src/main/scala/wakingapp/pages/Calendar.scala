@@ -13,6 +13,8 @@ import scala.scalajs.js.Date
 case class Calendar() extends CustomPage {
   type IsCritical = Boolean
 
+  // TODO Add buttons to 'fake' actions
+
   val alarmTime = Var[String]("")
   val alarmTriggered = Var[Option[IsCritical]](None)
 
@@ -23,10 +25,12 @@ case class Calendar() extends CustomPage {
   val currentTime = Channel[Date]()
   val times = Buffer(0, 30, 60, 90, 120, 150)
   val timeRange = Var[Option[Ref[Int]]](Some(times.get.head))
+  val actualAlarmTime = Opt[String]()
 
   val ignAlarmTime = alarmTime.tail
-  ignAlarmTime.tail.foreach(_ => { // TODO .tail is a workaround
+  ignAlarmTime.tail.foreach(at => { // TODO .tail is a workaround
     println("Alarm time: " + alarmTime.get)
+    actualAlarmTime := at
     sendSettings()
   })
   val ignTimeRange = timeRange.tail
@@ -44,11 +48,16 @@ case class Calendar() extends CustomPage {
     alarmTriggered := Some(crit.toString.toBoolean)
   })
 
-  socket.on("showerOn", (json: js.Dynamic) => {
+  socket.on("actualAlarmTime", (time: js.Dynamic) => {
+    // TODO between X and Y
+    actualAlarmTime := time.toString
+  })
+
+  socket.on("showerOccupied", (json: js.Dynamic) => {
     events += "The shower is occupied"
   })
 
-  socket.on("showerOff", (json: js.Dynamic) => {
+  socket.on("showerFree", (json: js.Dynamic) => {
     events += "The shower is free"
   })
 
@@ -83,8 +92,9 @@ case class Calendar() extends CustomPage {
 
   , Grid.Row(
       div(
-        h1(currentTime.map(Format.time))
-      ).css("col-md-2 col-md-offset-5")
+        h1("Current time: " , currentTime.map(Format.time))
+      , h1("Actual alarm time: " , actualAlarmTime)
+      ).css("col-md-4 col-md-offset-5")
     )
 
     , p(b("Events"))

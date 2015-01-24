@@ -14956,8 +14956,8 @@ ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4.prototype.apply__sjs_js_Dynamic__
     if ((i$2 < len)) {
       var idx = i$2;
       var arg1$3 = ScalaJS.s.scm_ResizableArray$class__apply__scm_ResizableArray__I__O(this$7, idx);
-      var x$2 = ScalaJS.as.Lorg_widok_Ref(arg1$3);
-      var jsx$5 = ScalaJS.uI(x$2.get$1);
+      var x$1 = ScalaJS.as.Lorg_widok_Ref(arg1$3);
+      var jsx$5 = ScalaJS.uI(x$1.get$1);
       var x = ScalaJS.objectToString(json["timeRange"]);
       var this$9 = new ScalaJS.c.sci_StringOps().init___T(x);
       var this$11 = ScalaJS.m.jl_Integer$();
@@ -21967,9 +21967,6 @@ ScalaJS.h.Lorg_widok_bindings_HTML$HorizontalLine = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lorg_widok_bindings_HTML$HorizontalLine.prototype = ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype;
-ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype.productPrefix__T = (function() {
-  return "HorizontalLine"
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype.init___ = (function() {
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
   ScalaJS.m.sc_Seq$();
@@ -21977,6 +21974,9 @@ ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype.init___ = (function(
   var this$4 = new ScalaJS.c.scm_ListBuffer().init___();
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("hr", this$4.toList__sci_List());
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype.productPrefix__T = (function() {
+  return "HorizontalLine"
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$HorizontalLine.prototype.productArity__I = (function() {
   return 0
@@ -22111,10 +22111,6 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.render__Lorg_scalajs_dom_Node
 ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.click__Lorg_widok_Channel = (function() {
   return (((1 & this.bitmap$0$1) === 0) ? this.click$lzycompute__p1__Lorg_widok_Channel() : this.click$1)
 });
-ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.hashCode__I = (function() {
-  var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.init___T = (function(source) {
   this.source$1 = source;
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
@@ -22124,6 +22120,10 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.init___T = (function(source) 
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("img", this$4.toList__sci_List());
   this.rendered$1["setAttribute"]("src", source);
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.hashCode__I = (function() {
+  var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Image.prototype.productIterator__sc_Iterator = (function() {
   return new ScalaJS.c.sr_ScalaRunTime$$anon$1().init___s_Product(this)
@@ -22191,9 +22191,6 @@ ScalaJS.h.Lorg_widok_bindings_HTML$Input$File = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lorg_widok_bindings_HTML$Input$File.prototype = ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype;
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype.productPrefix__T = (function() {
-  return "File"
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype.init___ = (function() {
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
   ScalaJS.m.sc_Seq$();
@@ -22202,6 +22199,9 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype.init___ = (function() {
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("input", this$4.toList__sci_List());
   this.rendered$1["setAttribute"]("type", "file");
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype.productPrefix__T = (function() {
+  return "File"
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$File.prototype.productArity__I = (function() {
   return 0
@@ -22296,9 +22296,6 @@ ScalaJS.h.Lorg_widok_bindings_HTML$Input$Select$Option = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lorg_widok_bindings_HTML$Input$Select$Option.prototype = ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype;
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype.productPrefix__T = (function() {
-  return "Option"
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype.init___ = (function() {
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
   ScalaJS.m.sc_Seq$();
@@ -22306,6 +22303,9 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype.init___ = (func
   var this$4 = new ScalaJS.c.scm_ListBuffer().init___();
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("option", this$4.toList__sci_List());
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype.productPrefix__T = (function() {
+  return "Option"
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select$Option.prototype.productArity__I = (function() {
   return 0
@@ -22517,9 +22517,6 @@ ScalaJS.h.Lorg_widok_bindings_HTML$LineBreak = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lorg_widok_bindings_HTML$LineBreak.prototype = ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype;
-ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype.productPrefix__T = (function() {
-  return "LineBreak"
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype.init___ = (function() {
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
   ScalaJS.m.sc_Seq$();
@@ -22527,6 +22524,9 @@ ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype.init___ = (function() {
   var this$4 = new ScalaJS.c.scm_ListBuffer().init___();
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("br", this$4.toList__sci_List());
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype.productPrefix__T = (function() {
+  return "LineBreak"
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$LineBreak.prototype.productArity__I = (function() {
   return 0
@@ -23246,14 +23246,14 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.render__Lorg_scalajs_dom_Node_
 ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.click__Lorg_widok_Channel = (function() {
   return (((1 & this.bitmap$0$1) === 0) ? this.click$lzycompute__p1__Lorg_widok_Channel() : this.click$1)
 });
-ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.hashCode__I = (function() {
-  var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.init___T = (function(value) {
   this.value$1 = value;
   this.rendered$1 = ScalaJS.g["document"]["createTextNode"](value);
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.hashCode__I = (function() {
+  var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Text.prototype.productIterator__sc_Iterator = (function() {
   return new ScalaJS.c.sr_ScalaRunTime$$anon$1().init___s_Product(this)
@@ -24443,9 +24443,6 @@ ScalaJS.h.Lorg_widok_bindings_HTML$Input$Checkbox = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lorg_widok_bindings_HTML$Input$Checkbox.prototype = ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype;
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype.productPrefix__T = (function() {
-  return "Checkbox"
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype.init___ = (function() {
   var jsx$1 = ScalaJS.m.Lorg_widok_DOM$();
   ScalaJS.m.sc_Seq$();
@@ -24454,6 +24451,9 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype.init___ = (function(
   this.rendered$1 = jsx$1.createElement__T__sc_Seq__Lorg_scalajs_dom_HTMLElement("input", this$4.toList__sci_List());
   this.rendered$1["setAttribute"]("type", "checkbox");
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype.productPrefix__T = (function() {
+  return "Checkbox"
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Checkbox.prototype.productArity__I = (function() {
   return 0
@@ -24621,13 +24621,6 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.hashCode__I = (functio
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.productIterator__sc_Iterator = (function() {
   return new ScalaJS.c.sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.click$lzycompute__p1__Lorg_widok_Channel = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.click$1 = ScalaJS.s.Lorg_widok_Node$class__click__Lorg_widok_Node__Lorg_widok_Channel(this);
-    this.bitmap$0$1 = (1 | this.bitmap$0$1)
-  };
-  return this.click$1
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.init___sc_Seq__I = (function(options, selected) {
   this.options$1 = options;
   this.selected$1 = selected;
@@ -24660,6 +24653,13 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.init___sc_Seq__I = (fu
     })
   })(this)));
   return this
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Select.prototype.click$lzycompute__p1__Lorg_widok_Channel = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.click$1 = ScalaJS.s.Lorg_widok_Node$class__click__Lorg_widok_Node__Lorg_widok_Channel(this);
+    this.bitmap$0$1 = (1 | this.bitmap$0$1)
+  };
+  return this.click$1
 });
 ScalaJS.is.Lorg_widok_bindings_HTML$Input$Select = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lorg_widok_bindings_HTML$Input$Select)))
@@ -25406,6 +25406,7 @@ ScalaJS.c.Lwakingapp_pages_Calendar = (function() {
   this.currentTime$1 = null;
   this.times$1 = null;
   this.timeRange$1 = null;
+  this.actualAlarmTime$1 = null;
   this.ignAlarmTime$1 = null;
   this.ignTimeRange$1 = null;
   this.node$1 = null
@@ -25417,9 +25418,6 @@ ScalaJS.h.Lwakingapp_pages_Calendar = (function() {
   /*<skip>*/
 });
 ScalaJS.h.Lwakingapp_pages_Calendar.prototype = ScalaJS.c.Lwakingapp_pages_Calendar.prototype;
-ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productPrefix__T = (function() {
-  return "Calendar"
-});
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
   ScalaJS.s.Lorg_widok_BasePage$class__$$init$__Lorg_widok_BasePage__V(this);
   this.alarmTime$1 = new ScalaJS.c.Lorg_widok_Var().init___O("");
@@ -25441,37 +25439,40 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
   var this$5 = this.times$1;
   var this$6 = this$5.elements$1;
   this.timeRange$1 = new ScalaJS.c.Lorg_widok_Var().init___O(new ScalaJS.c.s_Some().init___O(ScalaJS.s.sc_IndexedSeqOptimized$class__head__sc_IndexedSeqOptimized__O(this$6)));
+  this.actualAlarmTime$1 = new ScalaJS.c.Lorg_widok_Opt().init___();
   var this$7 = this.alarmTime$1;
   this.ignAlarmTime$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$7, 1);
   var this$8 = this.ignAlarmTime$1;
-  var this$13 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$8, 1);
+  var this$14 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$8, 1);
   var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
-    return (function(x$1$2) {
-      ScalaJS.as.T(x$1$2);
+    return (function(at$2) {
+      var at = ScalaJS.as.T(at$2);
       var this$9 = arg$outer.alarmTime$1;
       var x = ("Alarm time: " + this$9.org$widok$Var$$v$1);
       var this$11 = ScalaJS.m.s_Console$();
       var this$12 = this$11.outVar$2;
       ScalaJS.as.Ljava_io_PrintStream(this$12.tl$1.get__O()).println__O__V(x);
+      var this$13 = arg$outer.actualAlarmTime$1;
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$13, at);
       arg$outer.sendSettings__V()
     })
   })(this));
-  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$13, f);
-  var this$14 = this.timeRange$1;
-  this.ignTimeRange$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$14, 1);
-  var this$15 = this.ignTimeRange$1;
-  var this$19 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$15, 1);
+  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$14, f);
+  var this$15 = this.timeRange$1;
+  this.ignTimeRange$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$15, 1);
+  var this$16 = this.ignTimeRange$1;
+  var this$20 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$16, 1);
   var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
     return (function(tr$2) {
       var tr = ScalaJS.as.s_Option(tr$2);
-      var x$2 = new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["Time range: ", ""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([tr]));
-      var this$17 = ScalaJS.m.s_Console$();
-      var this$18 = this$17.outVar$2;
-      ScalaJS.as.Ljava_io_PrintStream(this$18.tl$1.get__O()).println__O__V(x$2);
+      var x$1 = new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["Time range: ", ""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([tr]));
+      var this$18 = ScalaJS.m.s_Console$();
+      var this$19 = this$18.outVar$2;
+      ScalaJS.as.Ljava_io_PrintStream(this$19.tl$1.get__O()).println__O__V(x$1);
       arg$outer$1.sendSettings__V()
     })
   })(this));
-  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$19, f$1);
+  ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$20, f$1);
   this.socket$1["on"]("settings", (function(f$2) {
     return (function(arg1$1) {
       return f$2.apply__O__O(arg1$1)
@@ -25479,52 +25480,62 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
   })(new ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4().init___Lwakingapp_pages_Calendar(this)));
   this.socket$1["on"]("alarm", (function(arg$outer$2) {
     return (function(crit$2) {
-      var this$25 = arg$outer$2.alarmTriggered$1;
-      var x$3 = ScalaJS.objectToString(crit$2);
-      var this$23 = new ScalaJS.c.sci_StringOps().init___T(x$3);
-      var v = new ScalaJS.c.s_Some().init___O(ScalaJS.s.sci_StringLike$class__parseBoolean__p0__sci_StringLike__T__Z(this$23, this$23.repr$1));
-      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$25, v)
+      var this$26 = arg$outer$2.alarmTriggered$1;
+      var x$2 = ScalaJS.objectToString(crit$2);
+      var this$24 = new ScalaJS.c.sci_StringOps().init___T(x$2);
+      var v = new ScalaJS.c.s_Some().init___O(ScalaJS.s.sci_StringLike$class__parseBoolean__p0__sci_StringLike__T__Z(this$24, this$24.repr$1));
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$26, v)
     })
   })(this));
-  this.socket$1["on"]("showerOn", (function(arg$outer$3) {
+  this.socket$1["on"]("actualAlarmTime", (function(arg$outer$3) {
+    return (function(time$2) {
+      var this$28 = arg$outer$3.actualAlarmTime$1;
+      var v$1 = ScalaJS.objectToString(time$2);
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$28, v$1)
+    })
+  })(this));
+  this.socket$1["on"]("showerOccupied", (function(arg$outer$4) {
     return (function(json$2) {
-      var this$27 = arg$outer$3.events$1;
-      return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$27, "The shower is occupied")
+      var this$30 = arg$outer$4.events$1;
+      return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$30, "The shower is occupied")
     })
   })(this));
-  this.socket$1["on"]("showerOff", (function(arg$outer$4) {
+  this.socket$1["on"]("showerFree", (function(arg$outer$5) {
     return (function(json$2$1) {
-      var this$29 = arg$outer$4.events$1;
-      return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$29, "The shower is free")
+      var this$32 = arg$outer$5.events$1;
+      return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$32, "The shower is free")
     })
   })(this));
-  ScalaJS.g["setInterval"]((function(arg$outer$5) {
+  ScalaJS.g["setInterval"]((function(arg$outer$6) {
     return (function() {
-      var this$30 = arg$outer$5.currentTime$1;
-      var v$1 = new ScalaJS.g["Date"]();
-      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$30, v$1)
+      var this$33 = arg$outer$6.currentTime$1;
+      var v$2 = new ScalaJS.g["Date"]();
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$33, v$2)
     })
   })(this), 1000);
   return this
 });
+ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productPrefix__T = (function() {
+  return "Calendar"
+});
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (function() {
+  var jsx$22 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$21 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
   var jsx$20 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$19 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
-  var jsx$18 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$17 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
-  var jsx$16 = ScalaJS.m.s_Predef$();
+  var jsx$19 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
+  var jsx$18 = ScalaJS.m.s_Predef$();
   var this$2 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$().Text__Lorg_widok_bindings_HTML$Input$Text();
   var this$3 = ScalaJS.s.Lorg_widok_bindings_HTML$Input$Textual$class__placeholder__Lorg_widok_bindings_HTML$Input$Textual__T__Lorg_widok_bindings_HTML$Input$Textual(this$2, "hh:mm");
   var ch = this.alarmTime$1;
-  var jsx$15 = jsx$18.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$17, 3, jsx$16.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text(this$3, ch)]), 1)));
-  var jsx$14 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$13 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
-  var jsx$12 = ScalaJS.m.s_Predef$();
-  var jsx$11 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$();
+  var jsx$17 = jsx$20.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$19, 3, jsx$18.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text(this$3, ch)]), 1)));
+  var jsx$16 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$15 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
+  var jsx$14 = ScalaJS.m.s_Predef$();
+  var jsx$13 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$();
   ScalaJS.m.sc_Seq$();
   ScalaJS.m.sci_Seq$();
   var this$6 = new ScalaJS.c.scm_ListBuffer().init___();
-  var this$8 = jsx$11.Select__sc_Seq__I__Lorg_widok_bindings_HTML$Input$Select(this$6.toList__sci_List(), (-1));
+  var this$8 = jsx$13.Select__sc_Seq__I__Lorg_widok_bindings_HTML$Input$Select(this$6.toList__sci_List(), (-1));
   var this$7 = this.times$1;
   var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(min$2) {
     var min = ScalaJS.uI(min$2);
@@ -25532,58 +25543,62 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
   }));
   var map = new ScalaJS.c.Lorg_widok_BufMap().init___Lorg_widok_ReadBuffer__F1(this$7, f);
   var selection = this.timeRange$1;
-  var jsx$10 = jsx$20.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$19, jsx$15, jsx$14.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$13, 3, jsx$12.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
-  var jsx$9 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$12 = jsx$22.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$21, jsx$17, jsx$16.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$15, 3, jsx$14.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
+  var jsx$11 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
+  var jsx$9 = new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Current time: ");
   var jsx$8 = ScalaJS.m.Lorg_widok_package$();
-  var this$9 = this.currentTime$1;
+  var this$10 = this.currentTime$1;
   var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(date$2) {
     return ScalaJS.m.Lwakingapp_helpers_Format$().time__sjs_js_Date__T(date$2)
   }));
-  var contents = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$8.StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$9, f$1))]);
-  var contents$1 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents)]);
-  var this$12 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$1);
-  var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-2 col-md-offset-5"]);
-  var jsx$7 = jsx$9.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$12, cssTags)]));
+  var contents = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$9, jsx$8.StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$10, f$1))]);
+  var jsx$10 = new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents);
+  ScalaJS.m.Lorg_widok_package$html$().h1$1;
+  var contents$1 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Actual alarm time: "), ScalaJS.m.Lorg_widok_package$().StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(this.actualAlarmTime$1)]);
+  var contents$2 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$10, new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents$1)]);
+  var this$15 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$2);
+  var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-4 col-md-offset-5"]);
+  var jsx$7 = jsx$11.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$15, cssTags)]));
   ScalaJS.m.Lorg_widok_package$html$().p$1;
   ScalaJS.m.Lorg_widok_package$html$().b$1;
-  var contents$2 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Events")]);
-  var contents$3 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text$Bold().init___sc_Seq(contents$2)]);
-  var jsx$6 = new ScalaJS.c.Lorg_widok_bindings_HTML$Paragraph().init___sc_Seq(contents$3);
+  var contents$3 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Events")]);
+  var contents$4 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text$Bold().init___sc_Seq(contents$3)]);
+  var jsx$6 = new ScalaJS.c.Lorg_widok_bindings_HTML$Paragraph().init___sc_Seq(contents$4);
   ScalaJS.m.Lorg_widok_package$html$().p$1;
   ScalaJS.m.Lorg_widok_package$html$().div$1;
-  var contents$4 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("No events triggered")]);
-  var this$18 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$4);
+  var contents$5 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("No events triggered")]);
+  var this$21 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$5);
   var cssTags$1 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["alert alert-danger"]);
-  var qual$1 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$18, cssTags$1));
-  var this$19 = this.events$1;
-  var x$6 = ScalaJS.s.Lorg_widok_Aggregate$class__isEmpty__Lorg_widok_Aggregate__Lorg_widok_ReadChannel(this$19);
-  var jsx$4 = ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$1, x$6, true);
+  var qual$1 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$21, cssTags$1));
+  var this$22 = this.events$1;
+  var x$5 = ScalaJS.s.Lorg_widok_Aggregate$class__isEmpty__Lorg_widok_Aggregate__Lorg_widok_ReadChannel(this$22);
+  var jsx$4 = ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$1, x$5, true);
   ScalaJS.m.Lorg_widok_package$html$().ul$1;
-  var contents$5 = ScalaJS.m.sci_Nil$();
-  var this$24 = new ScalaJS.c.Lorg_widok_bindings_HTML$List$Unordered().init___sc_Seq(contents$5);
+  var contents$6 = ScalaJS.m.sci_Nil$();
+  var this$27 = new ScalaJS.c.Lorg_widok_bindings_HTML$List$Unordered().init___sc_Seq(contents$6);
   var aggregate = this.events$1;
   var f$2 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x0$1$2) {
     var x0$1 = ScalaJS.as.Lorg_widok_Ref(x0$1$2);
     var o7 = new ScalaJS.c.s_Some().init___O(x0$1.get$1);
     var ev = ScalaJS.as.T(o7.x$2);
     ScalaJS.m.Lorg_widok_package$html$().li$1;
-    var contents$6 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T(ev)]);
-    return new ScalaJS.c.Lorg_widok_bindings_HTML$List$Item().init___sc_Seq(contents$6)
+    var contents$7 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T(ev)]);
+    return new ScalaJS.c.Lorg_widok_bindings_HTML$List$Item().init___sc_Seq(contents$7)
   }));
-  var contents$7 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$4, ScalaJS.s.Lorg_widok_Widget$List$class__bind__Lorg_widok_Widget$List__Lorg_widok_Aggregate__F1__Lorg_widok_Widget$List(this$24, aggregate, f$2)]);
-  var jsx$5 = new ScalaJS.c.Lorg_widok_bindings_HTML$Paragraph().init___sc_Seq(contents$7);
+  var contents$8 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$4, ScalaJS.s.Lorg_widok_Widget$List$class__bind__Lorg_widok_Widget$List__Lorg_widok_Aggregate__F1__Lorg_widok_Widget$List(this$27, aggregate, f$2)]);
+  var jsx$5 = new ScalaJS.c.Lorg_widok_bindings_HTML$Paragraph().init___sc_Seq(contents$8);
   var jsx$3 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
-  var contents$8 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Alarm triggered")]);
-  var contents$9 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents$8)]);
-  var this$29 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$9);
+  var contents$9 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Alarm triggered")]);
+  var contents$10 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents$9)]);
+  var this$32 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$10);
   var cssTags$2 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["alert"]);
-  var this$31 = ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$29, cssTags$2);
-  var this$30 = this.alarmTriggered$1;
+  var this$34 = ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$32, cssTags$2);
+  var this$33 = this.alarmTriggered$1;
   var f$3 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(alarm$2) {
     var alarm = ScalaJS.as.s_Option(alarm$2);
     var x$2 = new ScalaJS.c.s_Some().init___O(true);
@@ -25593,32 +25608,32 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
       return "alert-success"
     }
   }));
-  var tag = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$30, f$3);
-  var jsx$2 = ScalaJS.s.Lorg_widok_Widget$class__cssCh__Lorg_widok_Widget__Lorg_widok_ReadChannel__Lorg_widok_Widget(this$31, tag);
-  var this$34 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 5 minutes")]), 1)));
+  var tag = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$33, f$3);
+  var jsx$2 = ScalaJS.s.Lorg_widok_Widget$class__cssCh__Lorg_widok_Widget__Lorg_widok_ReadChannel__Lorg_widok_Widget(this$34, tag);
+  var this$37 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 5 minutes")]), 1)));
   var f$4 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
-    return (function(x$3$2) {
+    return (function(x$2$2) {
       arg$outer.snooze__I__V(5)
     })
   })(this));
-  var jsx$1 = ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$34, f$4);
-  var this$37 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 15 minutes")]), 1)));
+  var jsx$1 = ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$37, f$4);
+  var this$40 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 15 minutes")]), 1)));
   var f$5 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
-    return (function(x$4$2) {
+    return (function(x$3$2) {
       arg$outer$1.snooze__I__V(15)
     })
   })(this));
-  var contents$10 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$37, f$5)]);
-  var this$39 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$10);
+  var contents$11 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$40, f$5)]);
+  var this$42 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$11);
   var cssTags$3 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-2 col-md-offset-5"]);
-  var qual$2 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$39, cssTags$3));
-  var this$40 = this.alarmTriggered$1;
-  var f$6 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x$5$2) {
-    var x$5 = ScalaJS.as.s_Option(x$5$2);
-    return x$5.isDefined__Z()
+  var qual$2 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$42, cssTags$3));
+  var this$43 = this.alarmTriggered$1;
+  var f$6 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2) {
+    var x$4 = ScalaJS.as.s_Option(x$4$2);
+    return x$4.isDefined__Z()
   }));
-  var x$8 = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$40, f$6);
-  return new ScalaJS.c.Lorg_widok_Inline().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$10, jsx$7, jsx$6, jsx$5, jsx$3.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$2, x$8, true)]))]))
+  var x$7 = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$43, f$6);
+  return new ScalaJS.c.Lorg_widok_Inline().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$12, jsx$7, jsx$6, jsx$5, jsx$3.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$2, x$7, true)]))]))
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.sendSettings__V = (function() {
   var jsx$1 = this.socket$1;
@@ -25642,11 +25657,11 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productElement__I__O = (function(x
     throw new ScalaJS.c.jl_IndexOutOfBoundsException().init___T(("" + x$1))
   }
 });
-ScalaJS.c.Lwakingapp_pages_Calendar.prototype.toString__T = (function() {
-  return ScalaJS.m.sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_View = (function() {
   return this.body__Lorg_widok_Inline()
+});
+ScalaJS.c.Lwakingapp_pages_Calendar.prototype.toString__T = (function() {
+  return ScalaJS.m.sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.snooze__I__V = (function(minutes) {
   var this$1 = this.alarmTriggered$1;
@@ -26666,15 +26681,15 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.render__Lorg_scalajs
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.click__Lorg_widok_Channel = (function() {
   return (((4 & this.bitmap$0$1) === 0) ? this.click$lzycompute__p1__Lorg_widok_Channel() : this.click$1)
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
+  this.rendered$1 = x$1
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.liveValue$lzycompute__p1__Lorg_widok_StateChannel = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
     this.liveValue$1 = ScalaJS.s.Lorg_widok_Widget$Input$Text$class__liveValue__Lorg_widok_Widget$Input$Text__Lorg_widok_StateChannel(this);
     this.bitmap$0$1 = (2 | this.bitmap$0$1)
   };
   return this.liveValue$1
-});
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
-  this.rendered$1 = x$1
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Password.prototype.hashCode__I = (function() {
   var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
@@ -26755,11 +26770,11 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.init___ = (function() {
   this.rendered$1["setAttribute"]("type", "text");
   return this
 });
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.rendered__Lorg_scalajs_dom_HTMLInputElement = (function() {
-  return this.rendered$1
-});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.productPrefix__T = (function() {
   return "Text"
+});
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.rendered__Lorg_scalajs_dom_HTMLInputElement = (function() {
+  return this.rendered$1
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.productArity__I = (function() {
   return 0
@@ -26797,15 +26812,15 @@ ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.render__Lorg_scalajs_dom
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.click__Lorg_widok_Channel = (function() {
   return (((4 & this.bitmap$0$1) === 0) ? this.click$lzycompute__p1__Lorg_widok_Channel() : this.click$1)
 });
+ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
+  this.rendered$1 = x$1
+});
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.liveValue$lzycompute__p1__Lorg_widok_StateChannel = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
     this.liveValue$1 = ScalaJS.s.Lorg_widok_Widget$Input$Text$class__liveValue__Lorg_widok_Widget$Input$Text__Lorg_widok_StateChannel(this);
     this.bitmap$0$1 = (2 | this.bitmap$0$1)
   };
   return this.liveValue$1
-});
-ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.org$widok$bindings$HTML$Input$Textual$$undsetter$und$rendered$und$eq__Lorg_scalajs_dom_HTMLInputElement__V = (function(x$1) {
-  this.rendered$1 = x$1
 });
 ScalaJS.c.Lorg_widok_bindings_HTML$Input$Text.prototype.hashCode__I = (function() {
   var this$2 = ScalaJS.m.s_util_hashing_MurmurHash3$();
@@ -29457,13 +29472,13 @@ ScalaJS.h.sci_AbstractMap = (function() {
   /*<skip>*/
 });
 ScalaJS.h.sci_AbstractMap.prototype = ScalaJS.c.sci_AbstractMap.prototype;
-ScalaJS.c.sci_AbstractMap.prototype.repr__scg_Subtractable = (function() {
-  return this
-});
 ScalaJS.c.sci_AbstractMap.prototype.init___ = (function() {
   return this
 });
 ScalaJS.c.sci_AbstractMap.prototype.seq__sc_TraversableOnce = (function() {
+  return this
+});
+ScalaJS.c.sci_AbstractMap.prototype.repr__scg_Subtractable = (function() {
   return this
 });
 ScalaJS.c.sci_AbstractMap.prototype.thisCollection__sc_Traversable = (function() {
@@ -29680,11 +29695,11 @@ ScalaJS.h.sci_Set$EmptySet$.prototype = ScalaJS.c.sci_Set$EmptySet$.prototype;
 ScalaJS.c.sci_Set$EmptySet$.prototype.seq__sc_TraversableOnce = (function() {
   return this
 });
-ScalaJS.c.sci_Set$EmptySet$.prototype.repr__scg_Subtractable = (function() {
-  return this
-});
 ScalaJS.c.sci_Set$EmptySet$.prototype.init___ = (function() {
   ScalaJS.n.sci_Set$EmptySet$ = this;
+  return this
+});
+ScalaJS.c.sci_Set$EmptySet$.prototype.repr__scg_Subtractable = (function() {
   return this
 });
 ScalaJS.c.sci_Set$EmptySet$.prototype.$$minus__O__scg_Subtractable = (function(elem) {
@@ -30362,11 +30377,11 @@ ScalaJS.c.sci_HashSet.prototype.diff__sc_GenSet__sci_HashSet = (function(that) {
 ScalaJS.c.sci_HashSet.prototype.updated0__O__I__I__sci_HashSet = (function(key, hash, level) {
   return new ScalaJS.c.sci_HashSet$HashSet1().init___O__I(key, hash)
 });
-ScalaJS.c.sci_HashSet.prototype.computeHash__O__I = (function(key) {
-  return this.improve__I__I(ScalaJS.m.sr_ScalaRunTime$().hash__O__I(key))
-});
 ScalaJS.c.sci_HashSet.prototype.seq__sc_TraversableOnce = (function() {
   return this
+});
+ScalaJS.c.sci_HashSet.prototype.computeHash__O__I = (function(key) {
+  return this.improve__I__I(ScalaJS.m.sr_ScalaRunTime$().hash__O__I(key))
 });
 ScalaJS.c.sci_HashSet.prototype.repr__scg_Subtractable = (function() {
   return this
@@ -30389,15 +30404,15 @@ ScalaJS.c.sci_HashSet.prototype.thisCollection__sc_Traversable = (function() {
 ScalaJS.c.sci_HashSet.prototype.companion__scg_GenericCompanion = (function() {
   return ScalaJS.m.sci_HashSet$()
 });
+ScalaJS.c.sci_HashSet.prototype.foreach__F1__V = (function(f) {
+  /*<skip>*/
+});
 ScalaJS.c.sci_HashSet.prototype.filter__F1__sci_HashSet = (function(p) {
   var size = this.size__I();
   var $$this = ((6 + size) | 0);
   var buffer = ScalaJS.newArrayObject(ScalaJS.d.sci_HashSet.getArrayOf(), [(($$this < 224) ? $$this : 224)]);
   var s = this.filter0__F1__Z__I__Asci_HashSet__I__sci_HashSet(p, false, 0, buffer, 0);
   return ((s === null) ? ScalaJS.m.sci_HashSet$EmptyHashSet$() : s)
-});
-ScalaJS.c.sci_HashSet.prototype.foreach__F1__V = (function(f) {
-  /*<skip>*/
 });
 ScalaJS.c.sci_HashSet.prototype.subsetOf__sc_GenSet__Z = (function(that) {
   if (ScalaJS.is.sci_HashSet(that)) {
@@ -30417,11 +30432,11 @@ ScalaJS.c.sci_HashSet.prototype.size__I = (function() {
 ScalaJS.c.sci_HashSet.prototype.iterator__sc_Iterator = (function() {
   return ScalaJS.m.sc_Iterator$().empty$1
 });
-ScalaJS.c.sci_HashSet.prototype.removed0__O__I__I__sci_HashSet = (function(key, hash, level) {
-  return this
-});
 ScalaJS.c.sci_HashSet.prototype.empty__sc_Set = (function() {
   return ScalaJS.m.sci_HashSet$EmptyHashSet$()
+});
+ScalaJS.c.sci_HashSet.prototype.removed0__O__I__I__sci_HashSet = (function(key, hash, level) {
+  return this
 });
 ScalaJS.c.sci_HashSet.prototype.$$minus__O__sci_HashSet = (function(e) {
   var s = this.removed0__O__I__I__sci_HashSet(e, this.computeHash__O__I(e), 0);
@@ -30448,11 +30463,11 @@ ScalaJS.c.sci_HashSet.prototype.diff0__sci_HashSet__I__Asci_HashSet__I__sci_Hash
 ScalaJS.c.sci_HashSet.prototype.filter0__F1__Z__I__Asci_HashSet__I__sci_HashSet = (function(p, negate, level, buffer, offset0) {
   return null
 });
-ScalaJS.c.sci_HashSet.prototype.get0__O__I__I__Z = (function(key, hash, level) {
-  return false
-});
 ScalaJS.c.sci_HashSet.prototype.$$plus__O__sc_Set = (function(elem) {
   return this.$$plus__O__sci_HashSet(elem)
+});
+ScalaJS.c.sci_HashSet.prototype.get0__O__I__I__Z = (function(key, hash, level) {
+  return false
 });
 ScalaJS.c.sci_HashSet.prototype.subsetOf0__sci_HashSet__I__Z = (function(that, level) {
   return true
@@ -30658,11 +30673,11 @@ ScalaJS.c.sci_ListSet$Node.prototype.containsInternal__p5__sci_ListSet__O__Z = (
     }
   }
 });
-ScalaJS.c.sci_ListSet$Node.prototype.tail__sci_ListSet = (function() {
-  return this.$$outer$f
-});
 ScalaJS.c.sci_ListSet$Node.prototype.$$plus__O__sc_Set = (function(elem) {
   return this.$$plus__O__sci_ListSet(elem)
+});
+ScalaJS.c.sci_ListSet$Node.prototype.tail__sci_ListSet = (function() {
+  return this.$$outer$f
 });
 ScalaJS.is.sci_ListSet$Node = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.sci_ListSet$Node)))
@@ -31057,6 +31072,13 @@ ScalaJS.c.sci_HashSet$HashTrieSet.prototype.diff0__sci_HashSet__I__Asci_HashSet_
     return this
   }
 });
+ScalaJS.c.sci_HashSet$HashTrieSet.prototype.init___I__Asci_HashSet__I = (function(bitmap, elems, size0) {
+  this.bitmap$5 = bitmap;
+  this.elems$5 = elems;
+  this.size0$5 = size0;
+  ScalaJS.m.s_Predef$().assert__Z__V((ScalaJS.m.jl_Integer$().bitCount__I__I(bitmap) === elems.u["length"]));
+  return this
+});
 ScalaJS.c.sci_HashSet$HashTrieSet.prototype.filter0__F1__Z__I__Asci_HashSet__I__sci_HashSet = (function(p, negate, level, buffer, offset0) {
   var offset = offset0;
   var rs = 0;
@@ -31085,13 +31107,6 @@ ScalaJS.c.sci_HashSet$HashTrieSet.prototype.filter0__F1__Z__I__Asci_HashSet__I__
     var bitmap1 = ((length === this.elems$5.u["length"]) ? this.bitmap$5 : ScalaJS.m.sci_HashSet$().scala$collection$immutable$HashSet$$keepBits__I__I__I(this.bitmap$5, kept));
     return new ScalaJS.c.sci_HashSet$HashTrieSet().init___I__Asci_HashSet__I(bitmap1, elems1, rs)
   }
-});
-ScalaJS.c.sci_HashSet$HashTrieSet.prototype.init___I__Asci_HashSet__I = (function(bitmap, elems, size0) {
-  this.bitmap$5 = bitmap;
-  this.elems$5 = elems;
-  this.size0$5 = size0;
-  ScalaJS.m.s_Predef$().assert__Z__V((ScalaJS.m.jl_Integer$().bitCount__I__I(bitmap) === elems.u["length"]));
-  return this
 });
 ScalaJS.c.sci_HashSet$HashTrieSet.prototype.get0__O__I__I__Z = (function(key, hash, level) {
   var index = (31 & ((hash >>> level) | 0));
@@ -31919,10 +31934,10 @@ ScalaJS.c.sci_HashMap.prototype.seq__sc_TraversableOnce = (function() {
 ScalaJS.c.sci_HashMap.prototype.computeHash__O__I = (function(key) {
   return this.improve__I__I(ScalaJS.m.sr_ScalaRunTime$().hash__O__I(key))
 });
-ScalaJS.c.sci_HashMap.prototype.repr__scg_Subtractable = (function() {
+ScalaJS.c.sci_HashMap.prototype.init___ = (function() {
   return this
 });
-ScalaJS.c.sci_HashMap.prototype.init___ = (function() {
+ScalaJS.c.sci_HashMap.prototype.repr__scg_Subtractable = (function() {
   return this
 });
 ScalaJS.c.sci_HashMap.prototype.$$minus__O__scg_Subtractable = (function(elem) {
@@ -31953,12 +31968,12 @@ ScalaJS.c.sci_HashMap.prototype.empty__sc_Map = (function() {
 ScalaJS.c.sci_HashMap.prototype.removed0__O__I__I__sci_HashMap = (function(key, hash, level) {
   return this
 });
-ScalaJS.c.sci_HashMap.prototype.$$minus__O__sci_HashMap = (function(key) {
-  return this.removed0__O__I__I__sci_HashMap(key, this.computeHash__O__I(key), 0)
-});
 ScalaJS.c.sci_HashMap.prototype.empty__sci_Map = (function() {
   ScalaJS.m.sci_HashMap$();
   return ScalaJS.m.sci_HashMap$EmptyHashMap$()
+});
+ScalaJS.c.sci_HashMap.prototype.$$minus__O__sci_HashMap = (function(key) {
+  return this.removed0__O__I__I__sci_HashMap(key, this.computeHash__O__I(key), 0)
 });
 ScalaJS.c.sci_HashMap.prototype.seq__sc_Map = (function() {
   return this
@@ -32083,11 +32098,11 @@ ScalaJS.c.sci_HashSet$HashSet1.prototype.size__I = (function() {
 ScalaJS.c.sci_HashSet$HashSet1.prototype.removed0__O__I__I__sci_HashSet = (function(key, hash, level) {
   return (((hash === this.hash$6) && ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(key, this.key$6)) ? null : this)
 });
-ScalaJS.c.sci_HashSet$HashSet1.prototype.diff0__sci_HashSet__I__Asci_HashSet__I__sci_HashSet = (function(that, level, buffer, offset0) {
-  return (that.get0__O__I__I__Z(this.key$6, this.hash$6, level) ? null : this)
-});
 ScalaJS.c.sci_HashSet$HashSet1.prototype.filter0__F1__Z__I__Asci_HashSet__I__sci_HashSet = (function(p, negate, level, buffer, offset0) {
   return ((negate !== ScalaJS.uZ(p.apply__O__O(this.key$6))) ? this : null)
+});
+ScalaJS.c.sci_HashSet$HashSet1.prototype.diff0__sci_HashSet__I__Asci_HashSet__I__sci_HashSet = (function(that, level, buffer, offset0) {
+  return (that.get0__O__I__I__Z(this.key$6, this.hash$6, level) ? null : this)
 });
 ScalaJS.c.sci_HashSet$HashSet1.prototype.get0__O__I__I__Z = (function(key, hash, level) {
   return ((hash === this.hash$6) && ScalaJS.m.sr_BoxesRunTime$().equals__O__O__Z(key, this.key$6))
@@ -36498,10 +36513,6 @@ ScalaJS.h.scm_ListBuffer = (function() {
   /*<skip>*/
 });
 ScalaJS.h.scm_ListBuffer.prototype = ScalaJS.c.scm_ListBuffer.prototype;
-ScalaJS.c.scm_ListBuffer.prototype.indexOf__O__I__I = (function(elem, from) {
-  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
-  return ScalaJS.s.sc_GenSeqLike$class__indexOf__sc_GenSeqLike__O__I__I(this$1, elem, from)
-});
 ScalaJS.c.scm_ListBuffer.prototype.copy__p6__V = (function() {
   if (this.scala$collection$mutable$ListBuffer$$start$6.isEmpty__Z()) {
     return (void 0)
@@ -36514,6 +36525,10 @@ ScalaJS.c.scm_ListBuffer.prototype.copy__p6__V = (function() {
     this.$$plus$eq__O__scm_ListBuffer(cursor.head__O());
     cursor = ScalaJS.as.sci_List(cursor.tail__O())
   }
+});
+ScalaJS.c.scm_ListBuffer.prototype.indexOf__O__I__I = (function(elem, from) {
+  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
+  return ScalaJS.s.sc_GenSeqLike$class__indexOf__sc_GenSeqLike__O__I__I(this$1, elem, from)
 });
 ScalaJS.c.scm_ListBuffer.prototype.repr__scg_Subtractable = (function() {
   return this
@@ -37084,12 +37099,12 @@ ScalaJS.c.sjs_js_WrappedArray.prototype.apply__I__O = (function(index) {
 ScalaJS.c.sjs_js_WrappedArray.prototype.lengthCompare__I__I = (function(len) {
   return ScalaJS.s.sc_IndexedSeqOptimized$class__lengthCompare__sc_IndexedSeqOptimized__I__I(this, len)
 });
-ScalaJS.c.sjs_js_WrappedArray.prototype.sameElements__sc_GenIterable__Z = (function(that) {
-  return ScalaJS.s.sc_IndexedSeqOptimized$class__sameElements__sc_IndexedSeqOptimized__sc_GenIterable__Z(this, that)
-});
 ScalaJS.c.sjs_js_WrappedArray.prototype.apply__O__O = (function(v1) {
   var index = ScalaJS.uI(v1);
   return this.array$6[index]
+});
+ScalaJS.c.sjs_js_WrappedArray.prototype.sameElements__sc_GenIterable__Z = (function(that) {
+  return ScalaJS.s.sc_IndexedSeqOptimized$class__sameElements__sc_IndexedSeqOptimized__sc_GenIterable__Z(this, that)
 });
 ScalaJS.c.sjs_js_WrappedArray.prototype.$$minus__O__scg_Subtractable = (function(elem) {
   return ScalaJS.s.scm_BufferLike$class__clone__scm_Buffer__scm_Buffer(this).$$minus$eq__O__scm_Buffer(elem)
@@ -37284,6 +37299,9 @@ ScalaJS.c.scm_ArrayBuffer.prototype.init___ = (function() {
 ScalaJS.c.scm_ArrayBuffer.prototype.head__O = (function() {
   return ScalaJS.s.sc_IndexedSeqOptimized$class__head__sc_IndexedSeqOptimized__O(this)
 });
+ScalaJS.c.scm_ArrayBuffer.prototype.apply__I__O = (function(idx) {
+  return ScalaJS.s.scm_ResizableArray$class__apply__scm_ResizableArray__I__O(this, idx)
+});
 ScalaJS.c.scm_ArrayBuffer.prototype.remove__I__I__V = (function(n, count) {
   var requirement = (count >= 0);
   if ((!requirement)) {
@@ -37299,9 +37317,6 @@ ScalaJS.c.scm_ArrayBuffer.prototype.remove__I__I__V = (function(n, count) {
   ScalaJS.systemArraycopy(src, m, dest, n, len);
   var sz = ((this.size0$6 - count) | 0);
   ScalaJS.s.scm_ResizableArray$class__reduceToSize__scm_ResizableArray__I__V(this, sz)
-});
-ScalaJS.c.scm_ArrayBuffer.prototype.apply__I__O = (function(idx) {
-  return ScalaJS.s.scm_ResizableArray$class__apply__scm_ResizableArray__I__O(this, idx)
 });
 ScalaJS.c.scm_ArrayBuffer.prototype.lengthCompare__I__I = (function(len) {
   return ScalaJS.s.sc_IndexedSeqOptimized$class__lengthCompare__sc_IndexedSeqOptimized__I__I(this, len)
@@ -37366,11 +37381,11 @@ ScalaJS.c.scm_ArrayBuffer.prototype.init___I = (function(initialSize) {
   ScalaJS.s.scm_ResizableArray$class__$$init$__scm_ResizableArray__V(this);
   return this
 });
-ScalaJS.c.scm_ArrayBuffer.prototype.zipWithIndex__scg_CanBuildFrom__O = (function(bf) {
-  return ScalaJS.s.sc_IndexedSeqOptimized$class__zipWithIndex__sc_IndexedSeqOptimized__scg_CanBuildFrom__O(this, bf)
-});
 ScalaJS.c.scm_ArrayBuffer.prototype.length__I = (function() {
   return this.size0$6
+});
+ScalaJS.c.scm_ArrayBuffer.prototype.zipWithIndex__scg_CanBuildFrom__O = (function(bf) {
+  return ScalaJS.s.sc_IndexedSeqOptimized$class__zipWithIndex__sc_IndexedSeqOptimized__scg_CanBuildFrom__O(this, bf)
 });
 ScalaJS.c.scm_ArrayBuffer.prototype.seq__sc_Seq = (function() {
   return this
