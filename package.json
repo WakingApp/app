@@ -1,0 +1,23 @@
+{
+  "name": "wakeapp",
+  "version": "0.0.0",
+  "description": "wakeapp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WakingApp/app.git"
+  },
+  "author": "hack@georgenishimura.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WakingApp/app/issues"
+  },
+  "homepage": "https://github.com/WakingApp/app",
+  "dependencies": {
+    "express": "~4.9.8"
+  }
+}
