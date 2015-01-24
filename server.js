@@ -16,13 +16,7 @@ app.get('/test', function(req, res){
 
 app.use(express.static((__dirname + '/ui')));
 
-
-var ws = require('./ws')
-
-ws.ws(io)
-
-console.log("Alarm Time: " + ws.alarmTime)
-console.log("Time Range: " + ws.timeRange)
+var ws = require('./ws')(io)
 
 http.listen(3000, function(){
     console.log('listening on *:3000');
