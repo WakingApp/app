@@ -2,28 +2,60 @@
  * Module dependencies
  */
 
-  var express = require('express'),
+var express = require('express'),
     http = require('http'),
     path = require('path'),
-    cons = require('consolidate');
+    cons = require('consolidate'),
+    cookieParser = require('cookie-parser'),
+    passport = require('passport'),
+    session = require('express-session'),
+    calendar = require('./lib/calendar');
 
-  var app = module.exports = express();
+calendar.setUpGoogleAuth();
 
-  /**
-   * Configuration
-   */
+var app = module.exports = express();
 
-  // all environments
-  app.set('port', process.env.PORT || 3000);
-  app.engine('html', cons.nunjucks);
-  app.set('view engine', 'html');
-  app.use(express.static(path.join(__dirname, 'public')));
-  // app.use(app.router);
+/**
+ * Configuration
+ */
 
-  app.get('/:name', function(req,res) {
+// all environments
+app.set('port', process.env.PORT || 3000);
+app.engine('html', cons.nunjucks);
+app.set('view engine', 'html');
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+// app.use(app.router);
+
+app.get('/:name', function(req, res) {
     res.render(req.params.name);
-  })
+})
 
-  app.get('/', function(req,res) {
+app.get('/', calendar.authenticate, function(req, res) {
     res.render('index');
-  });
+});
+
+app.get('/calendar/success', calendar.ensureAuthenticated, function(req, res) {
+    res.send('success');
+});
+
+app.get('/calendar/fail', function(req, res) {
+    res.send('fail');
+});
+
+app.get('/calendar/search', calendar.searchCalendar);
+
+app.get('/calendar/oauth2callback', calendar.authenticate, function(req, res) {
+    console.log(req.isAuthenticated());
+    console.log('authenticated');
+    res.send('success');
+})
+
+app.listen(3000);
