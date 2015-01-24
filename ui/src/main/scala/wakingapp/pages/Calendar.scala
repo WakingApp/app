@@ -8,10 +8,15 @@ import org.widok.html._
 import org.widok.bindings.Bootstrap._
 
 import scala.scalajs.js
-import scala.scalajs.js.{JSON, Date}
+import scala.scalajs.js.Date
 
 case class Calendar() extends CustomPage {
+  type IsCritical = Boolean
+
   val alarmTime = Var[String]("")
+  val alarmTriggered = Var[Option[IsCritical]](None)
+
+  val events = Buffer[String]()
 
   val socket = js.Dynamic.global.io("http://10.100.93.15")
 
@@ -20,13 +25,31 @@ case class Calendar() extends CustomPage {
   val timeRange = Var[Option[Ref[Int]]](Some(times.get.head))
 
   val ignAlarmTime = alarmTime.tail
-  ignAlarmTime.foreach(_ => sendSettings())
+  ignAlarmTime.tail.foreach(_ => { // TODO .tail is a workaround
+    println("Alarm time: " + alarmTime.get)
+    sendSettings()
+  })
   val ignTimeRange = timeRange.tail
-  timeRange.foreach(_ => sendSettings())
+  ignTimeRange.tail.foreach(tr => {
+    println(s"Time range: $tr")
+    sendSettings()
+  })
 
   socket.on("settings", (json: js.Dynamic) => {
     alarmTime.produce(json.alarmTime.toString, ignAlarmTime)
     timeRange.produce(times.get.find(_.get == json.timeRange.toString.toInt), ignTimeRange)
+  })
+
+  socket.on("alarm", (crit: js.Dynamic) => {
+    alarmTriggered := Some(crit.toString.toBoolean)
+  })
+
+  socket.on("showerOn", (json: js.Dynamic) => {
+    events += "The shower is occupied"
+  })
+
+  socket.on("showerOff", (json: js.Dynamic) => {
+    events += "The shower is free"
   })
 
   def sendSettings() {
@@ -34,6 +57,11 @@ case class Calendar() extends CustomPage {
       alarmTime = alarmTime.get,
       timeRange = timeRange.get.get.get
     ))
+  }
+
+  def snooze(minutes: Int) {
+    alarmTriggered := None
+    socket.emit("snooze", minutes)
   }
 
   def body() = Inline(
@@ -57,6 +85,29 @@ case class Calendar() extends CustomPage {
       div(
         h1(currentTime.map(Format.time))
       ).css("col-md-2 col-md-offset-5")
+    )
+
+    , p(b("Events"))
+    , p(
+      div("No events triggered")
+        .css("alert alert-danger")
+        .show(events.isEmpty)
+
+    , ul().bind(events) { case Ref(ev) =>
+        li(ev)
+      }
+    )
+
+  , Grid.Row(
+      div(
+        div(
+          h1("Alarm triggered")
+        ).css("alert")
+         .cssCh(alarmTriggered.map(alarm => if (alarm == Some(true)) "alert-danger" else "alert-success"))
+      , Button(Button.Size.Large)("Snooze 5 minutes").onClick(_ => snooze(5))
+      , Button(Button.Size.Large)("Snooze 15 minutes").onClick(_ => snooze(15))
+      ).css("col-md-2 col-md-offset-5")
+       .show(alarmTriggered.map(_.nonEmpty))
     )
   )
 
