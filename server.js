@@ -4,24 +4,29 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var showerOccupiedAlertSent = false;
 var showerFreeAlertSent = false;
+var cons = require('consolidate');
+app.engine('html', cons.nunjucks);
+app.set('view engine', 'html');
 
 app.get('/', function(req, res){
     res.sendfile('index.html');
 });
 
-io.emit('settings', {alarmTime: "", timeRange:"0" });
+io.emit('settings', {alarmTime: "00:00", timeRange:"0" });
 
 app.get('/test', function(req, res){
-    res.sendFile(__dirname + '/ui/application.html')
+    res.render('test');
 });
 
-app.use(express.static((__dirname + '/ui')));
+app.use(express.static((__dirname + '/public')));
 
 var iotEventDispatcher = require('./iotEventDispatcher')(io)
 
 var ws = require('./ws')(io, iotEventDispatcher)
 
-var triggers = require('./lib/trigger')()
+var triggers = require('./lib/trigger')(function() {
+	io.emit('stop alarm');
+});
 
 setInterval(function(){
     triggers.getDataFromSensor()

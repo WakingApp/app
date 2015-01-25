@@ -14,22 +14,54 @@
             <div class="menu-bar">
                 <h3 class="menu-title">Bella</h3>
             </div>
-            <div class="main-view">
-                <span class="clock">
-                    <select id="hours" class="clock-text digits hours">
-			<option>01</option>		
-</select>
+            <div class="main-view alarm clock">
+                <span class="alarm-tab clock-display">
+		<h1 class="tab-2 clock-text digits hours"></h1>
+                    <select id="hours" value="0" class="tab-1 clock-text digits hours">
+			{% for i in range(00,24)  %}
+			
+			<option {{ 'selected' if loop.first else ''}} > {{ i if (i >= 10) else ('0' + i) }} </option>
+			{% endfor %}
+		    </select>
                     <h1 class="clock-text punc">:</h1>
-                    <select id="minutes" class="clock-text digits minutes">
-<option>30</option>	
-</select>
+			<h1 class="tab-2 clock-text digits minutes"></h1>
+                    <select id="minutes" value="0" class="tab-1 clock-text digits minutes">
+			{% for i in range(0,60)  %}
+			<option {{ 'selected' if loop.first else ''}} > {{i if (i >= 10) else ('0' + i ) }} </option>
+			{% endfor %}
+		   </select>
                 </span>
-                <span class="plusmn">&plusmn;
-		<select id="time-select" class="time-select">
-			<option>30 minutes</option>
+                <span class="plusmn alarm-tab">&plusmn;
+		<select id="time-select" value="0" class="time-select tab-1">
+			{% for i in range(0, 65, 5) %}
+			<option {{ 'selected' if loop.first else ''}} >{{i}}</option>
+			{% endfor %}
 		</select>
+		<h3 class="time-select tab-2"></h3>
+		&nbsp;minutes
 		</span>
-                <button id="start" class="set-button">set</button>
+                <button id="start" class="tab-1 alarm-tab set-button">set</button>
+                <ul class="events-list alarm-tab tab-2">Events
+                </ul>
+                <ul class="settings-list settings-tab">
+                    <li class="settings-item settings-tab">
+                        <div class="settings-title">Shower (SmartTables)</div>
+                        <div class="settings-button-minus"></div>
+                    </li>
+                    <li class="settings-item settings-tab">
+                        <div class="settings-title">Google Calendar</div>
+                        <div class="settings-button-minus"></div>
+                    </li>
+                    <li class="settings-item settings-tab">
+                        <div class="settings-title">Lights (SmartTables)</div>
+                        <div class="settings-button-minus"></div>
+                    </li>
+                    <li class="settings-item settings-tab">
+
+                        <div class="settings-button-plus"></div>
+                    </li>
+
+                </ul>
             </div>
             <div class="tab-bar">
                 <ul class="tab-list">
@@ -99,7 +131,9 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> 
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="/js/bind.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ module.exports = function(io, iotEventDispatcher){
 
     io.on('connection', function(socket){
         ioSocket = socket
+
         io.emit('settings', {alarmTime: mod.alarmTime, timeRange: mod.timeRange });
         socket.on('settings', function(msg){
             mod.alarmTime = msg.alarmTime
@@ -50,7 +51,7 @@ module.exports = function(io, iotEventDispatcher){
                 mod.amountOfTimeExtended = mod.amountOfTimeExtended + gracePeriod
                 ioSocket.emit("actualAlarmTime", mod.alarmTimeFormatted + mod.amountOfTimeExtended)
             } else {
-                ioSocket.emit('alarm', true)
+                ioSocket.emit('alarm', 'Alarm Rang')
                 triggers.body.dig = 1
                 triggers.pushDataToSensor()
                 mod.alarmFired = true
