@@ -2,6 +2,7 @@ module.exports = function(io, iotEventDispatcher){
     var eventLog = []
     var ioSocket
     var mod = {alarmTime: '', timeRange: 0, alarmTimeout: '', alarmFired: false, amountOfTimeExtended: 0};
+    var triggers = require('./lib/trigger')()
 
     io.on('connection', function(socket){
         ioSocket = socket
@@ -9,6 +10,7 @@ module.exports = function(io, iotEventDispatcher){
         socket.on('settings', function(msg){
             mod.alarmTime = msg.alarmTime
             mod.timeRange = msg.timeRange
+            console.log("timeRange", mod.timeRange)
             var alarmTime = parseTime(mod.alarmTime).getTime()
             var nearEvent = mod.getNearEvents(alarmTime)
             if(nearEvent){
@@ -16,7 +18,7 @@ module.exports = function(io, iotEventDispatcher){
                 io.emit('warning', "");
             }else{
                 console.log("normal time")
-                mod.alarmTimeFormatted = alarmTime
+                mod.alarmTimeFormatted = parseTime(mod.alarmTime).getTime()
                 alarmClock(mod.alarmTime)
             }
 
@@ -37,8 +39,10 @@ module.exports = function(io, iotEventDispatcher){
     });
     var sendSignal = function(){
         //if(!mod.alarmFired) {
-            var nearEvent = mod.getNearEvents(alarmTime)
-            console.log("iotEventDispatcher.isShowerOccupied " +iotEventDispatcher.isShowerOccupied)
+            var nearEvent = mod.getNearEvents(mod.alarmTime)
+        console.log("iotEventDispatcher.isShowerOccupied", iotEventDispatcher.isShowerOccupied)
+        console.log("mod.timeRange", mod.timeRange)
+        console.log("!nearEvent", !nearEvent)
             if (iotEventDispatcher.isShowerOccupied && (mod.timeRange > 0 && !nearEvent)) {
                 var gracePeriod = 5 * 60 * 1000 //5 minutes
                 mod.timeRange = Math.abs(mod.timeRange - gracePeriod);
@@ -46,8 +50,9 @@ module.exports = function(io, iotEventDispatcher){
                 mod.amountOfTimeExtended = mod.amountOfTimeExtended + gracePeriod
                 ioSocket.emit("actualAlarmTime", mod.alarmTimeFormatted + mod.amountOfTimeExtended)
             } else {
-                console.log("ALAAARM")
                 ioSocket.emit('alarm', true)
+                triggers.body.dig = 1
+                triggers.pushDataToSensor()
                 mod.alarmFired = true
             }
         //}

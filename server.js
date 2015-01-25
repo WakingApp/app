@@ -21,8 +21,17 @@ var iotEventDispatcher = require('./iotEventDispatcher')(io)
 
 var ws = require('./ws')(io, iotEventDispatcher)
 
+var triggers = require('./lib/trigger')()
+
+setInterval(function(){
+    triggers.getDataFromSensor()
+}, 5000)
+
+
 setInterval(function(){
     var currentTime = new Date().getTime();
+    console.log("currentTime", currentTime)
+    console.log("ws.alarmTimeFormatted", ws.alarmTimeFormatted)
     if(Math.abs(currentTime - ws.alarmTimeFormatted) < 30 * 60 * 1000){
         var nearEvent = ws.getNearEvents(ws.alarmTimeFormatted)
         if(iotEventDispatcher.isShowerOccupied && !showerOccupiedAlertSent){
@@ -35,6 +44,8 @@ setInterval(function(){
                 io.emit('showerFree', "");
                 io.emit('alarm', true);
                 showerFreeAlertSent = true
+                triggers.body.dig = 1
+                triggers.pushDataToSensor()
                 //ws.alarmFired = true
             }
 

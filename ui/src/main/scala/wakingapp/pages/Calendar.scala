@@ -20,7 +20,7 @@ case class Calendar() extends CustomPage {
 
   val events = Buffer[String]()
 
-  val socket = js.Dynamic.global.io("http://10.100.93.15")
+  val socket = js.Dynamic.global.io("http://10.100.85.125")
 
   val currentTime = Channel[Date]()
   val times = Buffer(0, 30, 60, 90, 120, 150)
