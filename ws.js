@@ -89,7 +89,7 @@ module.exports = function(io, iotEventDispatcher){
     }
 
     var getNearEvents = function(alarmTime){
-        var event = {name: 'Meeting with investor', time:'13:00'}
+        var event = {name: 'Meeting with investor', time:'09:30'}
         if(parseTime(event.time).getTime() - alarmTime <= 30 * 60 * 1000){
             return event
         }
