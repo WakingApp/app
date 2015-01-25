@@ -13,26 +13,28 @@ import scala.scalajs.js.Date
 case class Calendar() extends CustomPage {
   type IsCritical = Boolean
 
+  // TODO Add buttons to 'fake' actions
+
   val alarmTime = Var[String]("")
   val alarmTriggered = Var[Option[IsCritical]](None)
 
   val events = Buffer[String]()
 
-  val socket = js.Dynamic.global.io("http://10.100.93.15")
+  val socket = js.Dynamic.global.io("http://10.100.85.125")
 
   val currentTime = Channel[Date]()
   val times = Buffer(0, 30, 60, 90, 120, 150)
   val timeRange = Var[Option[Ref[Int]]](Some(times.get.head))
+  val actualAlarmTime = Opt[String]()
 
   val ignAlarmTime = alarmTime.tail
-  ignAlarmTime.tail.foreach(_ => { // TODO .tail is a workaround
+  ignAlarmTime.tail.foreach(at => { // TODO .tail is a workaround
     println("Alarm time: " + alarmTime.get)
-    sendSettings()
+    actualAlarmTime := at
   })
   val ignTimeRange = timeRange.tail
   ignTimeRange.tail.foreach(tr => {
     println(s"Time range: $tr")
-    sendSettings()
   })
 
   socket.on("settings", (json: js.Dynamic) => {
@@ -44,11 +46,16 @@ case class Calendar() extends CustomPage {
     alarmTriggered := Some(crit.toString.toBoolean)
   })
 
-  socket.on("showerOn", (json: js.Dynamic) => {
+  socket.on("actualAlarmTime", (time: js.Dynamic) => {
+    // TODO between X and Y
+    actualAlarmTime := time.toString
+  })
+
+  socket.on("showerOccupied", (json: js.Dynamic) => {
     events += "The shower is occupied"
   })
 
-  socket.on("showerOff", (json: js.Dynamic) => {
+  socket.on("showerFree", (json: js.Dynamic) => {
     events += "The shower is free"
   })
 
@@ -81,10 +88,15 @@ case class Calendar() extends CustomPage {
       )
     )
 
+    , Grid.Column(Grid.ColumnType.Medium, 3)(
+        Button()("Set alarm").onClick(_ => sendSettings())
+      )
+
   , Grid.Row(
       div(
-        h1(currentTime.map(Format.time))
-      ).css("col-md-2 col-md-offset-5")
+        h1("Current time: " , currentTime.map(Format.time))
+      , h1("Actual alarm time: " , actualAlarmTime)
+      ).css("col-md-4 col-md-offset-5")
     )
 
     , p(b("Events"))
