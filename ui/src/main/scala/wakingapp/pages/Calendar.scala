@@ -31,12 +31,10 @@ case class Calendar() extends CustomPage {
   ignAlarmTime.tail.foreach(at => { // TODO .tail is a workaround
     println("Alarm time: " + alarmTime.get)
     actualAlarmTime := at
-    sendSettings()
   })
   val ignTimeRange = timeRange.tail
   ignTimeRange.tail.foreach(tr => {
     println(s"Time range: $tr")
-    sendSettings()
   })
 
   socket.on("settings", (json: js.Dynamic) => {
@@ -89,6 +87,10 @@ case class Calendar() extends CustomPage {
           .bind(times.mapTo(Format.minutes), timeRange)
       )
     )
+
+    , Grid.Column(Grid.ColumnType.Medium, 3)(
+        Button()("Set alarm").onClick(_ => sendSettings())
+      )
 
   , Grid.Row(
       div(

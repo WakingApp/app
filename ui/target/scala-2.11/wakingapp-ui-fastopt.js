@@ -1923,7 +1923,7 @@ ScalaJS.h.Lorg_widok_bindings_Bootstrap$Button$ = (function() {
 ScalaJS.h.Lorg_widok_bindings_Bootstrap$Button$.prototype = ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$.prototype;
 ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$.prototype.apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button = (function(size, type, contents) {
   var this$1 = new ScalaJS.c.Lorg_widok_bindings_HTML$Button().init___sc_Seq(contents);
-  var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["btn", type.cssTag$1, size.cssTag$1]);
+  var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["btn", type.cssTag$1, size.cssTag__T()]);
   return ScalaJS.as.Lorg_widok_bindings_HTML$Button(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$1, cssTags))
 });
 ScalaJS.is.Lorg_widok_bindings_Bootstrap$Button$ = (function(obj) {
@@ -17800,6 +17800,9 @@ ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Large$.prototype.productElem
 ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Large$.prototype.toString__T = (function() {
   return "Large"
 });
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Large$.prototype.cssTag__T = (function() {
+  return this.cssTag$1
+});
 ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Large$.prototype.hashCode__I = (function() {
   return 73190171
 });
@@ -17836,6 +17839,77 @@ ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$ = (function() {
     ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Large$ = new ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Large$().init___()
   };
   return ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Large$
+});
+/** @constructor */
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function() {
+  ScalaJS.c.O.call(this);
+  this.cssTag$1 = null
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype = new ScalaJS.h.O();
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.constructor = ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$;
+/** @constructor */
+ScalaJS.h.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function() {
+  /*<skip>*/
+});
+ScalaJS.h.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype = ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype;
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.init___ = (function() {
+  ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = this;
+  this.cssTag$1 = "";
+  return this
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.productPrefix__T = (function() {
+  return "Normal"
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.productArity__I = (function() {
+  return 0
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.productElement__I__O = (function(x$1) {
+  matchEnd3: {
+    throw new ScalaJS.c.jl_IndexOutOfBoundsException().init___T(("" + x$1))
+  }
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.toString__T = (function() {
+  return "Normal"
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.cssTag__T = (function() {
+  return this.cssTag$1
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.hashCode__I = (function() {
+  return (-1955878649)
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.productIterator__sc_Iterator = (function() {
+  return new ScalaJS.c.sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+ScalaJS.is.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$)))
+});
+ScalaJS.as.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function(obj) {
+  return ((ScalaJS.is.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$(obj) || (obj === null)) ? obj : ScalaJS.throwClassCastException(obj, "org.widok.bindings.Bootstrap$Button$Size$Normal$"))
+});
+ScalaJS.isArrayOf.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$)))
+});
+ScalaJS.asArrayOf.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function(obj, depth) {
+  return ((ScalaJS.isArrayOf.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$(obj, depth) || (obj === null)) ? obj : ScalaJS.throwArrayCastException(obj, "Lorg.widok.bindings.Bootstrap$Button$Size$Normal$;", depth))
+});
+ScalaJS.d.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = new ScalaJS.ClassTypeData({
+  Lorg_widok_bindings_Bootstrap$Button$Size$Normal$: 0
+}, false, "org.widok.bindings.Bootstrap$Button$Size$Normal$", ScalaJS.d.O, {
+  Lorg_widok_bindings_Bootstrap$Button$Size$Normal$: 1,
+  O: 1,
+  Lorg_widok_bindings_Bootstrap$Button$Size: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$.prototype.$classData = ScalaJS.d.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$;
+ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (void 0);
+ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = (function() {
+  if ((!ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$)) {
+    ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$ = new ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$().init___()
+  };
+  return ScalaJS.n.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$
 });
 /** @constructor */
 ScalaJS.c.Lorg_widok_bindings_Bootstrap$Button$Type$Default$ = (function() {
@@ -25453,8 +25527,7 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
       var this$12 = this$11.outVar$2;
       ScalaJS.as.Ljava_io_PrintStream(this$12.tl$1.get__O()).println__O__V(x);
       var this$13 = arg$outer.actualAlarmTime$1;
-      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$13, at);
-      arg$outer.sendSettings__V()
+      ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$13, at)
     })
   })(this));
   ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$14, f);
@@ -25462,53 +25535,50 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.init___ = (function() {
   this.ignTimeRange$1 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$15, 1);
   var this$16 = this.ignTimeRange$1;
   var this$20 = ScalaJS.s.Lorg_widok_ReadChannel$class__skip__Lorg_widok_ReadChannel__I__Lorg_widok_ReadChannel(this$16, 1);
-  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
-    return (function(tr$2) {
-      var tr = ScalaJS.as.s_Option(tr$2);
-      var x$1 = new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["Time range: ", ""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([tr]));
-      var this$18 = ScalaJS.m.s_Console$();
-      var this$19 = this$18.outVar$2;
-      ScalaJS.as.Ljava_io_PrintStream(this$19.tl$1.get__O()).println__O__V(x$1);
-      arg$outer$1.sendSettings__V()
-    })
-  })(this));
+  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(tr$2) {
+    var tr = ScalaJS.as.s_Option(tr$2);
+    var x$1 = new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["Time range: ", ""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([tr]));
+    var this$18 = ScalaJS.m.s_Console$();
+    var this$19 = this$18.outVar$2;
+    ScalaJS.as.Ljava_io_PrintStream(this$19.tl$1.get__O()).println__O__V(x$1)
+  }));
   ScalaJS.s.Lorg_widok_ReadChannel$class__foreach__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$20, f$1);
   this.socket$1["on"]("settings", (function(f$2) {
     return (function(arg1$1) {
       return f$2.apply__O__O(arg1$1)
     })
   })(new ScalaJS.c.Lwakingapp_pages_Calendar$$anonfun$4().init___Lwakingapp_pages_Calendar(this)));
-  this.socket$1["on"]("alarm", (function(arg$outer$2) {
+  this.socket$1["on"]("alarm", (function(arg$outer$1) {
     return (function(crit$2) {
-      var this$26 = arg$outer$2.alarmTriggered$1;
+      var this$26 = arg$outer$1.alarmTriggered$1;
       var x$2 = ScalaJS.objectToString(crit$2);
       var this$24 = new ScalaJS.c.sci_StringOps().init___T(x$2);
       var v = new ScalaJS.c.s_Some().init___O(ScalaJS.s.sci_StringLike$class__parseBoolean__p0__sci_StringLike__T__Z(this$24, this$24.repr$1));
       ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$26, v)
     })
   })(this));
-  this.socket$1["on"]("actualAlarmTime", (function(arg$outer$3) {
+  this.socket$1["on"]("actualAlarmTime", (function(arg$outer$2) {
     return (function(time$2) {
-      var this$28 = arg$outer$3.actualAlarmTime$1;
+      var this$28 = arg$outer$2.actualAlarmTime$1;
       var v$1 = ScalaJS.objectToString(time$2);
       ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$28, v$1)
     })
   })(this));
-  this.socket$1["on"]("showerOccupied", (function(arg$outer$4) {
+  this.socket$1["on"]("showerOccupied", (function(arg$outer$3) {
     return (function(json$2) {
-      var this$30 = arg$outer$4.events$1;
+      var this$30 = arg$outer$3.events$1;
       return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$30, "The shower is occupied")
     })
   })(this));
-  this.socket$1["on"]("showerFree", (function(arg$outer$5) {
+  this.socket$1["on"]("showerFree", (function(arg$outer$4) {
     return (function(json$2$1) {
-      var this$32 = arg$outer$5.events$1;
+      var this$32 = arg$outer$4.events$1;
       return ScalaJS.s.Lorg_widok_WriteBuffer$class__append__Lorg_widok_WriteBuffer__O__Lorg_widok_Ref(this$32, "The shower is free")
     })
   })(this));
-  ScalaJS.g["setInterval"]((function(arg$outer$6) {
+  ScalaJS.g["setInterval"]((function(arg$outer$5) {
     return (function() {
-      var this$33 = arg$outer$6.currentTime$1;
+      var this$33 = arg$outer$5.currentTime$1;
       var v$2 = new ScalaJS.g["Date"]();
       ScalaJS.s.Lorg_widok_WriteChannel$class__produce__Lorg_widok_WriteChannel__O__V(this$33, v$2)
     })
@@ -25519,23 +25589,23 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.productPrefix__T = (function() {
   return "Calendar"
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (function() {
-  var jsx$22 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$21 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
-  var jsx$20 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$19 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
-  var jsx$18 = ScalaJS.m.s_Predef$();
+  var jsx$26 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$25 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$().Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$(), 2, ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Time window:")]), 1)));
+  var jsx$24 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$23 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
+  var jsx$22 = ScalaJS.m.s_Predef$();
   var this$2 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$().Text__Lorg_widok_bindings_HTML$Input$Text();
   var this$3 = ScalaJS.s.Lorg_widok_bindings_HTML$Input$Textual$class__placeholder__Lorg_widok_bindings_HTML$Input$Textual__T__Lorg_widok_bindings_HTML$Input$Textual(this$2, "hh:mm");
   var ch = this.alarmTime$1;
-  var jsx$17 = jsx$20.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$19, 3, jsx$18.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text(this$3, ch)]), 1)));
-  var jsx$16 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
-  var jsx$15 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
-  var jsx$14 = ScalaJS.m.s_Predef$();
-  var jsx$13 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$();
+  var jsx$21 = jsx$24.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$23, 3, jsx$22.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Text$class__bindLive__Lorg_widok_Widget$Input$Text__Lorg_widok_Channel__Lorg_widok_Widget$Input$Text(this$3, ch)]), 1)));
+  var jsx$20 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$19 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
+  var jsx$18 = ScalaJS.m.s_Predef$();
+  var jsx$17 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Input$();
   ScalaJS.m.sc_Seq$();
   ScalaJS.m.sci_Seq$();
   var this$6 = new ScalaJS.c.scm_ListBuffer().init___();
-  var this$8 = jsx$13.Select__sc_Seq__I__Lorg_widok_bindings_HTML$Input$Select(this$6.toList__sci_List(), (-1));
+  var this$8 = jsx$17.Select__sc_Seq__I__Lorg_widok_bindings_HTML$Input$Select(this$6.toList__sci_List(), (-1));
   var this$7 = this.times$1;
   var f = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(min$2) {
     var min = ScalaJS.uI(min$2);
@@ -25543,24 +25613,34 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
   }));
   var map = new ScalaJS.c.Lorg_widok_BufMap().init___Lorg_widok_ReadBuffer__F1(this$7, f);
   var selection = this.timeRange$1;
-  var jsx$12 = jsx$22.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$21, jsx$17, jsx$16.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$15, 3, jsx$14.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
+  var jsx$16 = jsx$26.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$25, jsx$21, jsx$20.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$19, 3, jsx$18.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$Input$Select$class__bind__Lorg_widok_Widget$Input$Select__Lorg_widok_ChildMap__Lorg_widok_Channel__Lorg_widok_Widget$Input$Select(this$8, map, selection)]), 1)))]));
+  var jsx$15 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
+  var jsx$14 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$ColumnType$Medium$();
+  var jsx$13 = ScalaJS.m.s_Predef$();
+  var this$12 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Normal$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Set alarm")]), 1)));
+  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
+    return (function(x$2$2) {
+      arg$outer.sendSettings__V()
+    })
+  })(this));
+  var jsx$12 = jsx$15.Column__Lorg_widok_bindings_Bootstrap$Grid$ColumnType__I__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(jsx$14, 3, jsx$13.wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$12, f$1)]), 1)));
   var jsx$11 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
   var jsx$9 = new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Current time: ");
   var jsx$8 = ScalaJS.m.Lorg_widok_package$();
-  var this$10 = this.currentTime$1;
-  var f$1 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(date$2) {
+  var this$14 = this.currentTime$1;
+  var f$2 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(date$2) {
     return ScalaJS.m.Lwakingapp_helpers_Format$().time__sjs_js_Date__T(date$2)
   }));
-  var contents = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$9, jsx$8.StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$10, f$1))]);
+  var contents = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$9, jsx$8.StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$14, f$2))]);
   var jsx$10 = new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents);
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
   var contents$1 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Actual alarm time: "), ScalaJS.m.Lorg_widok_package$().StringChannelToWidget__Lorg_widok_ReadChannel__Lorg_widok_bindings_HTML$Container$Inline(this.actualAlarmTime$1)]);
   var contents$2 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$10, new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents$1)]);
-  var this$15 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$2);
+  var this$19 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$2);
   var cssTags = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-4 col-md-offset-5"]);
-  var jsx$7 = jsx$11.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$15, cssTags)]));
+  var jsx$7 = jsx$11.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$19, cssTags)]));
   ScalaJS.m.Lorg_widok_package$html$().p$1;
   ScalaJS.m.Lorg_widok_package$html$().b$1;
   var contents$3 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Events")]);
@@ -25569,17 +25649,17 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
   ScalaJS.m.Lorg_widok_package$html$().p$1;
   ScalaJS.m.Lorg_widok_package$html$().div$1;
   var contents$5 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("No events triggered")]);
-  var this$21 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$5);
+  var this$25 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$5);
   var cssTags$1 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["alert alert-danger"]);
-  var qual$1 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$21, cssTags$1));
-  var this$22 = this.events$1;
-  var x$5 = ScalaJS.s.Lorg_widok_Aggregate$class__isEmpty__Lorg_widok_Aggregate__Lorg_widok_ReadChannel(this$22);
-  var jsx$4 = ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$1, x$5, true);
+  var qual$1 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$25, cssTags$1));
+  var this$26 = this.events$1;
+  var x$6 = ScalaJS.s.Lorg_widok_Aggregate$class__isEmpty__Lorg_widok_Aggregate__Lorg_widok_ReadChannel(this$26);
+  var jsx$4 = ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$1, x$6, true);
   ScalaJS.m.Lorg_widok_package$html$().ul$1;
   var contents$6 = ScalaJS.m.sci_Nil$();
-  var this$27 = new ScalaJS.c.Lorg_widok_bindings_HTML$List$Unordered().init___sc_Seq(contents$6);
+  var this$31 = new ScalaJS.c.Lorg_widok_bindings_HTML$List$Unordered().init___sc_Seq(contents$6);
   var aggregate = this.events$1;
-  var f$2 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x0$1$2) {
+  var f$3 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x0$1$2) {
     var x0$1 = ScalaJS.as.Lorg_widok_Ref(x0$1$2);
     var o7 = new ScalaJS.c.s_Some().init___O(x0$1.get$1);
     var ev = ScalaJS.as.T(o7.x$2);
@@ -25587,7 +25667,7 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
     var contents$7 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T(ev)]);
     return new ScalaJS.c.Lorg_widok_bindings_HTML$List$Item().init___sc_Seq(contents$7)
   }));
-  var contents$8 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$4, ScalaJS.s.Lorg_widok_Widget$List$class__bind__Lorg_widok_Widget$List__Lorg_widok_Aggregate__F1__Lorg_widok_Widget$List(this$27, aggregate, f$2)]);
+  var contents$8 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$4, ScalaJS.s.Lorg_widok_Widget$List$class__bind__Lorg_widok_Widget$List__Lorg_widok_Aggregate__F1__Lorg_widok_Widget$List(this$31, aggregate, f$3)]);
   var jsx$5 = new ScalaJS.c.Lorg_widok_bindings_HTML$Paragraph().init___sc_Seq(contents$8);
   var jsx$3 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Grid$();
   ScalaJS.m.Lorg_widok_package$html$().div$1;
@@ -25595,11 +25675,11 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
   ScalaJS.m.Lorg_widok_package$html$().h1$1;
   var contents$9 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Alarm triggered")]);
   var contents$10 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([new ScalaJS.c.Lorg_widok_bindings_HTML$Heading$Level1().init___sc_Seq(contents$9)]);
-  var this$32 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$10);
+  var this$36 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$10);
   var cssTags$2 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["alert"]);
-  var this$34 = ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$32, cssTags$2);
-  var this$33 = this.alarmTriggered$1;
-  var f$3 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(alarm$2) {
+  var this$38 = ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$36, cssTags$2);
+  var this$37 = this.alarmTriggered$1;
+  var f$4 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(alarm$2) {
     var alarm = ScalaJS.as.s_Option(alarm$2);
     var x$2 = new ScalaJS.c.s_Some().init___O(true);
     if (((alarm !== null) && alarm.equals__O__Z(x$2))) {
@@ -25608,32 +25688,32 @@ ScalaJS.c.Lwakingapp_pages_Calendar.prototype.body__Lorg_widok_Inline = (functio
       return "alert-success"
     }
   }));
-  var tag = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$33, f$3);
-  var jsx$2 = ScalaJS.s.Lorg_widok_Widget$class__cssCh__Lorg_widok_Widget__Lorg_widok_ReadChannel__Lorg_widok_Widget(this$34, tag);
-  var this$37 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 5 minutes")]), 1)));
-  var f$4 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer) {
-    return (function(x$2$2) {
-      arg$outer.snooze__I__V(5)
-    })
-  })(this));
-  var jsx$1 = ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$37, f$4);
-  var this$40 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 15 minutes")]), 1)));
+  var tag = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$37, f$4);
+  var jsx$2 = ScalaJS.s.Lorg_widok_Widget$class__cssCh__Lorg_widok_Widget__Lorg_widok_ReadChannel__Lorg_widok_Widget(this$38, tag);
+  var this$41 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 5 minutes")]), 1)));
   var f$5 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$1) {
     return (function(x$3$2) {
-      arg$outer$1.snooze__I__V(15)
+      arg$outer$1.snooze__I__V(5)
     })
   })(this));
-  var contents$11 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$40, f$5)]);
-  var this$42 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$11);
+  var jsx$1 = ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$41, f$5);
+  var this$44 = ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$().apply__Lorg_widok_bindings_Bootstrap$Button$Size__Lorg_widok_bindings_Bootstrap$Button$Type__sc_Seq__Lorg_widok_bindings_HTML$Button(ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Size$Large$(), ScalaJS.m.Lorg_widok_bindings_Bootstrap$Button$Type$Default$(), ScalaJS.m.s_Predef$().wrapRefArray__AO__scm_WrappedArray(ScalaJS.asArrayOf.O(ScalaJS.makeNativeArrayWrapper(ScalaJS.d.Lorg_widok_View.getArrayOf(), [new ScalaJS.c.Lorg_widok_bindings_HTML$Text().init___T("Snooze 15 minutes")]), 1)));
+  var f$6 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(arg$outer$2) {
+    return (function(x$4$2) {
+      arg$outer$2.snooze__I__V(15)
+    })
+  })(this));
+  var contents$11 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$2, jsx$1, ScalaJS.s.Lorg_widok_Widget$class__onClick__Lorg_widok_Widget__F1__Lorg_widok_Widget(this$44, f$6)]);
+  var this$46 = new ScalaJS.c.Lorg_widok_bindings_HTML$Container$Generic().init___sc_Seq(contents$11);
   var cssTags$3 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["col-md-2 col-md-offset-5"]);
-  var qual$2 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$42, cssTags$3));
-  var this$43 = this.alarmTriggered$1;
-  var f$6 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2) {
-    var x$4 = ScalaJS.as.s_Option(x$4$2);
-    return x$4.isDefined__Z()
+  var qual$2 = ScalaJS.as.Lorg_widok_bindings_HTML$Container$Generic(ScalaJS.s.Lorg_widok_Widget$class__css__Lorg_widok_Widget__sc_Seq__Lorg_widok_Widget(this$46, cssTags$3));
+  var this$47 = this.alarmTriggered$1;
+  var f$7 = new ScalaJS.c.sjsr_AnonFunction1().init___sjs_js_Function1((function(x$5$2) {
+    var x$5 = ScalaJS.as.s_Option(x$5$2);
+    return x$5.isDefined__Z()
   }));
-  var x$7 = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$43, f$6);
-  return new ScalaJS.c.Lorg_widok_Inline().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$12, jsx$7, jsx$6, jsx$5, jsx$3.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$2, x$7, true)]))]))
+  var x$8 = ScalaJS.s.Lorg_widok_ReadChannel$class__map__Lorg_widok_ReadChannel__F1__Lorg_widok_ReadChannel(this$47, f$7);
+  return new ScalaJS.c.Lorg_widok_Inline().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([jsx$16, jsx$12, jsx$7, jsx$6, jsx$5, jsx$3.Row__sc_Seq__Lorg_widok_bindings_HTML$Container$Generic(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.Lorg_widok_Widget$class__show__Lorg_widok_Widget__Lorg_widok_ReadChannel__Z__Lorg_widok_Widget(qual$2, x$8, true)]))]))
 });
 ScalaJS.c.Lwakingapp_pages_Calendar.prototype.sendSettings__V = (function() {
   var jsx$1 = this.socket$1;
