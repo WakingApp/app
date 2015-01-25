@@ -2,6 +2,15 @@
 
 	var socket = io();
 	var has_alarm = false;
+	var cancel = document.getElementById('cancel').addEventListener('click', function () {
+		console.log('cancel');
+		clearEvents();
+		socket.emit('cancel alarm');
+		var view = document.querySelector('.main-view');
+		view.classList.remove('set');
+		view.classList.add('clock');
+		
+	});
 	var set = document.getElementById('start');
 	set.addEventListener('click', function() {
 		console.log('click');
@@ -20,10 +29,10 @@
 
 		msg.alarmTime = at.hours + ':' + at.minutes; 		
 		msg.timeRange = ts.value;
-		addEvent('Set alarm time to ' + at.hours + ':' + at.minutes + ' with a window of ' + ts.value + ' minutes');	
 		console.log(msg);
 		socket.emit('settings', msg);		
 		function setAlarm(){
+			addEvent('Set alarm time to ' + at.hours + ':' + at.minutes + ' with a window of ' + ts.value + ' minutes');	
 			view.classList.remove('clock');
 			view.classList.add('set');	
 			var al = document.querySelector('.alert');
@@ -88,6 +97,13 @@
 		li.classList.add('events-item');
 		li.innerHTML = stringevent;
 		document.querySelector('.events-list').appendChild(li);	
+	}
+
+	function clearEvents() {
+		var lis = document.querySelectorAll('.events-item');
+		for(var i = 0; i < lis.length; i++) {
+			lis[i].remove();
+		}
 	}
 
 	function createPopup(title, text, txt_left, txt_right, fn_left, fn_right) {
