@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Bella</title>
     <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link rel="stylesheet" href="/css/test.css">
 </head>
 
@@ -15,31 +16,30 @@
                 <h3 class="menu-title">Bella</h3>
             </div>
             <div class="main-view alarm clock">
-                <span class="alarm-tab clock-display">
-		<h1 class="tab-2 clock-text digits hours"></h1>
+                <div class="alarm-tab clock-display">
+                    <h1 class="tab-2 clock-text digits hours"></h1>
                     <select id="hours" value="0" class="tab-1 clock-text digits hours">
-			{% for i in range(00,24)  %}
-			
-			<option {{ 'selected' if loop.first else ''}} > {{ i if (i >= 10) else ('0' + i) }} </option>
-			{% endfor %}
-		    </select>
+                        {% for i in range(00,24) %}
+
+                        <option {{ 'selected' if loop.first else ''}}> {{ i if (i >= 10) else ('0' + i) }} </option>
+                        {% endfor %}
+                    </select>
                     <h1 class="clock-text punc">:</h1>
-			<h1 class="tab-2 clock-text digits minutes"></h1>
+                    <h1 class="tab-2 clock-text digits minutes"></h1>
                     <select id="minutes" value="0" class="tab-1 clock-text digits minutes">
-			{% for i in range(0,60)  %}
-			<option {{ 'selected' if loop.first else ''}} > {{i if (i >= 10) else ('0' + i ) }} </option>
-			{% endfor %}
-		   </select>
-                </span>
-                <span class="plusmn alarm-tab">&plusmn;
-		<select id="time-select" value="0" class="time-select tab-1">
-			{% for i in range(0, 65, 5) %}
-			<option {{ 'selected' if loop.first else ''}} >{{i}}</option>
-			{% endfor %}
-		</select>
-		<h3 class="time-select tab-2"></h3>
-		&nbsp;minutes
-		</span>
+                        {% for i in range(0,60) %}
+                        <option {{ 'selected' if loop.first else ''}}> {{i if (i >= 10) else ('0' + i ) }} </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="plusmn alarm-tab">&plusmn;
+                    <select id="time-select" value="0" class="time-select tab-1">
+                        {% for i in range(0, 65, 5) %}
+                        <option {{ 'selected' if loop.first else ''}}>{{i}}</option>
+                        {% endfor %}
+                    </select>
+                    <h3 class="time-select tab-2"></h3> &nbsp;minutes
+                </div>
                 <button id="start" class="tab-1 alarm-tab set-button">set</button>
                 <ul class="events-list alarm-tab tab-2">Events
                 </ul>
@@ -131,7 +131,7 @@
                 </ul>
             </div>
         </div>
-    </div> 
+    </div>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="/js/bind.js"></script>
 </body>

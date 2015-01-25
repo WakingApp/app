@@ -16,7 +16,24 @@
     top: 0;
     bottom: 0;
     width: 320px;
-    height: 540px;
+    height: 520px;
+    padding: 0 20px;
+}
+
+.overlay {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #eee;
+	opacity: 0.9;
+	transition: top: 1s;
+	-webkit-transition: top 1s;
+}
+
+.overlay.hidden {
+	top: 520px;
 }
 
 .history .alarm-tab,
@@ -107,6 +124,7 @@ ul {
     position: absolute;
     top: 5px;
     width: 100%;
+    padding: 0 10px;
 }
 
 .settings-item {

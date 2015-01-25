@@ -16,7 +16,7 @@ module.exports = function(io, iotEventDispatcher){
             var nearEvent = mod.getNearEvents(alarmTime)
             if(nearEvent){
                 console.log("warning sent:" + nearEvent.name)
-                io.emit('warning', "");
+                io.emit('warning', nearEvent);
             }else{
                 console.log("normal time")
                 mod.alarmTimeFormatted = parseTime(mod.alarmTime).getTime()

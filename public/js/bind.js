@@ -6,8 +6,6 @@
 	set.addEventListener('click', function() {
 		console.log('click');
 		var view = document.querySelector('.main-view'); 
-		view.classList.remove('clock');
-		view.classList.add('set');	
 		var at = {};
 		var qs = document.querySelectorAll('select.digits');
 		for(var i = 0; i < qs.length; i++) {
@@ -25,6 +23,19 @@
 		addEvent('Set alarm time to ' + at.hours + ':' + at.minutes + ' with a window of ' + ts.value + ' minutes');	
 		console.log(msg);
 		socket.emit('settings', msg);		
+		function setAlarm(){
+			view.classList.remove('clock');
+			view.classList.add('set');	
+			var al = document.querySelector('.alert');
+			if(al) {
+				al.remove();
+			}
+		}	
+		var to = setTimeout(setAlarm , 2000);
+		socket.on('warning', function(eventobj) {
+			clearTimeout(to);
+			createPopup('Are you sure?', eventobj.name + ' is at ' + eventobj.time + '!', 'Cancel', 'OK', function() { ; }, setAlarm);
+		});
 	});
 
 	document.getElementById('alarm').addEventListener('click', function() {
@@ -120,7 +131,6 @@
 		
 		document.querySelector('.main-view').appendChild(alt);
 	}
-
 
 		socket.on('settings', function(json) {
 			var time_arr = json.alarmTime.split(':');
