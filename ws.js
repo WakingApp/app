@@ -25,10 +25,14 @@ module.exports = function(io, iotEventDispatcher){
 
         });
 
-        socket.on('alarmConfirmation', function(msg){
+        socket.on('force settings', function(msg){
             var alarmTime = parseTime(mod.alarmTime).getTime()
             mod.alarmTimeFormatted = alarmTime
             alarmClock(mod.alarmTime)
+        });
+
+        socket.on('cancel alarm', function(msg){
+            clearTimeout(mod.alarmTimeout)
         });
 
         socket.on('snooze', function(snoozeTime){
@@ -90,6 +94,8 @@ module.exports = function(io, iotEventDispatcher){
 
     var getNearEvents = function(alarmTime){
         var event = {name: 'Meeting with investor', time:'09:30'}
+        console.log("parseTime(event.time).getTime()", parseTime(event.time).getTime())
+        console.log("alarmTime", alarmTime)
         if(parseTime(event.time).getTime() - alarmTime <= 30 * 60 * 1000){
             return event
         }
