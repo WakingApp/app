@@ -35,6 +35,7 @@
 			addEvent('Set alarm time to ' + at.hours + ':' + at.minutes + ' with a window of ' + ts.value + ' minutes');	
 			view.classList.remove('clock');
 			view.classList.add('set');	
+			socket.emit('force settings', msg);		
 			var al = document.querySelector('.alert');
 			if(al) {
 				al.remove();
