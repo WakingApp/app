@@ -34,16 +34,14 @@ module.exports = function(io, iotEventDispatcher){
         socket.on('snooze', function(snoozeTime){
             console.log("USER SNOOZED")
             logEvent('snooze')
-            console.log("Snooze time" + snoozeTime)
+            triggers.body.dig = 0
+            triggers.pushDataToSensor()
             setAlarmTime(snoozeTime * 60 * 1000)//converting to ms
         });
     });
     var sendSignal = function(){
         //if(!mod.alarmFired) {
             var nearEvent = mod.getNearEvents(mod.alarmTime)
-        console.log("iotEventDispatcher.isShowerOccupied", iotEventDispatcher.isShowerOccupied)
-        console.log("mod.timeRange", mod.timeRange)
-        console.log("!nearEvent", !nearEvent)
             if (iotEventDispatcher.isShowerOccupied && (mod.timeRange > 0 && !nearEvent)) {
                 var gracePeriod = 5 * 60 * 1000 //5 minutes
                 mod.timeRange = Math.abs(mod.timeRange - gracePeriod);
@@ -96,7 +94,6 @@ module.exports = function(io, iotEventDispatcher){
             return event
         }
         return null
-
     }
 
     mod.setAlarmTime = setAlarmTime
